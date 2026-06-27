@@ -66,6 +66,17 @@
     ]
   },
   {
+    "id": "dist-oo1-larios",
+    "subject": "Programación Distribuida Aplicada",
+    "professor": "Mariano Larios Gómez",
+    "section": "OO1",
+    "sessions": [
+      {"day": "monday", "start": "09:00", "end": "10:00"},
+      {"day": "wednesday", "start": "09:00", "end": "11:00"},
+      {"day": "friday", "start": "09:00", "end": "11:00"}
+    ]
+  },
+  {
     "id": "dist-oo2-roman",
     "subject": "Programación Distribuida Aplicada",
     "professor": "Alberto Román Flores",

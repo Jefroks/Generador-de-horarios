@@ -31,11 +31,14 @@ jobs:
         with:
           channel: stable
 
+      - name: Clean Flutter cache
+        run: flutter clean
+
       - name: Install dependencies
         run: flutter pub get
 
       - name: Build Flutter Web
-        run: flutter build web --release --base-href "/Generador-de-horarios/"
+        run: flutter build web --release --base-href "/Generador-de-horarios/" --pwa-strategy=none
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
