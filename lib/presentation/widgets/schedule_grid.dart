@@ -1,11 +1,14 @@
+import 'dart:math' as math;
+
 import 'package:flutter/material.dart';
 
 import '../../core/constants/app_time.dart';
+import '../../core/layout/app_breakpoints.dart';
 import '../../core/utils/time_utils.dart';
 import '../../domain/entities/course_option.dart';
 import '../../domain/entities/week_day.dart';
 
-class ScheduleGrid extends StatelessWidget {
+class ScheduleGrid extends StatefulWidget {
   const ScheduleGrid({
     super.key,
     required this.options,
@@ -13,68 +16,122 @@ class ScheduleGrid extends StatelessWidget {
 
   final List<CourseOption> options;
 
-  static const double _hourHeight = 64;
-  static const double _timeColumnWidth = 72;
-  static const double _dayColumnWidth = 190;
+  @override
+  State<ScheduleGrid> createState() => _ScheduleGridState();
+}
+
+class _ScheduleGridState extends State<ScheduleGrid> {
+  final ScrollController _horizontalController = ScrollController();
+  final ScrollController _verticalController = ScrollController();
+
+  @override
+  void dispose() {
+    _horizontalController.dispose();
+    _verticalController.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
-    final totalHeight = (AppTime.endHour - AppTime.startHour) * _hourHeight;
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        final isMobile = AppBreakpoints.isMobile(constraints.maxWidth);
+        final isTablet = AppBreakpoints.isTablet(constraints.maxWidth);
 
-    return Scrollbar(
-      thumbVisibility: true,
-      child: SingleChildScrollView(
-        scrollDirection: Axis.horizontal,
-        child: SizedBox(
-          width: _timeColumnWidth + (WeekDay.values.length * _dayColumnWidth),
-          child: Column(
-            children: [
-              _HeaderRow(timeColumnWidth: _timeColumnWidth, dayColumnWidth: _dayColumnWidth),
-              Expanded(
-                child: SingleChildScrollView(
-                  child: SizedBox(
-                    height: totalHeight,
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        _TimeColumn(hourHeight: _hourHeight, width: _timeColumnWidth),
-                        ...WeekDay.values.map(
-                          (day) => _DayColumn(
-                            day: day,
-                            options: options,
-                            width: _dayColumnWidth,
-                            hourHeight: _hourHeight,
+        final hourHeight = isMobile ? 72.0 : 64.0;
+        final timeColumnWidth = isMobile ? 56.0 : 72.0;
+        final minDayWidth = isMobile ? 112.0 : (isTablet ? 148.0 : 190.0);
+        final availableDayWidth = (constraints.maxWidth - timeColumnWidth) / WeekDay.values.length;
+        final dayColumnWidth = math.max(minDayWidth, availableDayWidth);
+        final gridWidth = timeColumnWidth + (WeekDay.values.length * dayColumnWidth);
+        final totalHeight = (AppTime.endHour - AppTime.startHour) * hourHeight;
+
+        return Scrollbar(
+          controller: _horizontalController,
+          thumbVisibility: true,
+          notificationPredicate: (notification) => notification.metrics.axis == Axis.horizontal,
+          child: SingleChildScrollView(
+            controller: _horizontalController,
+            scrollDirection: Axis.horizontal,
+            child: SizedBox(
+              width: gridWidth,
+              child: Column(
+                children: [
+                  _HeaderRow(
+                    timeColumnWidth: timeColumnWidth,
+                    dayColumnWidth: dayColumnWidth,
+                    compact: isMobile,
+                  ),
+                  Expanded(
+                    child: Scrollbar(
+                      controller: _verticalController,
+                      thumbVisibility: true,
+                      child: SingleChildScrollView(
+                        controller: _verticalController,
+                        child: SizedBox(
+                          height: totalHeight,
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              _TimeColumn(
+                                hourHeight: hourHeight,
+                                width: timeColumnWidth,
+                                compact: isMobile,
+                              ),
+                              ...WeekDay.values.map(
+                                (day) => _DayColumn(
+                                  day: day,
+                                  options: widget.options,
+                                  width: dayColumnWidth,
+                                  hourHeight: hourHeight,
+                                  compact: isMobile,
+                                ),
+                              ),
+                            ],
                           ),
                         ),
-                      ],
+                      ),
                     ),
                   ),
-                ),
+                ],
               ),
-            ],
+            ),
           ),
-        ),
-      ),
+        );
+      },
     );
   }
 }
 
 class _HeaderRow extends StatelessWidget {
-  const _HeaderRow({required this.timeColumnWidth, required this.dayColumnWidth});
+  const _HeaderRow({
+    required this.timeColumnWidth,
+    required this.dayColumnWidth,
+    required this.compact,
+  });
 
   final double timeColumnWidth;
   final double dayColumnWidth;
+  final bool compact;
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 48,
+      height: compact ? 42 : 48,
       decoration: BoxDecoration(
         border: Border(bottom: BorderSide(color: Theme.of(context).dividerColor)),
       ),
       child: Row(
         children: [
-          SizedBox(width: timeColumnWidth, child: const Center(child: Text('Hora'))),
+          SizedBox(
+            width: timeColumnWidth,
+            child: Center(
+              child: Text(
+                'Hora',
+                style: Theme.of(context).textTheme.labelSmall,
+              ),
+            ),
+          ),
           ...WeekDay.values.map(
             (day) => Container(
               width: dayColumnWidth,
@@ -82,7 +139,12 @@ class _HeaderRow extends StatelessWidget {
               decoration: BoxDecoration(
                 border: Border(left: BorderSide(color: Theme.of(context).dividerColor)),
               ),
-              child: Text(day.label, style: Theme.of(context).textTheme.titleSmall),
+              child: Text(
+                compact ? day.shortLabel : day.label,
+                style: compact
+                    ? Theme.of(context).textTheme.labelLarge
+                    : Theme.of(context).textTheme.titleSmall,
+              ),
             ),
           ),
         ],
@@ -92,10 +154,15 @@ class _HeaderRow extends StatelessWidget {
 }
 
 class _TimeColumn extends StatelessWidget {
-  const _TimeColumn({required this.hourHeight, required this.width});
+  const _TimeColumn({
+    required this.hourHeight,
+    required this.width,
+    required this.compact,
+  });
 
   final double hourHeight;
   final double width;
+  final bool compact;
 
   @override
   Widget build(BuildContext context) {
@@ -111,7 +178,10 @@ class _TimeColumn extends StatelessWidget {
             decoration: BoxDecoration(
               border: Border(bottom: BorderSide(color: Theme.of(context).dividerColor)),
             ),
-            child: Text('${hour.toString().padLeft(2, '0')}:00'),
+            child: Text(
+              '${hour.toString().padLeft(2, '0')}:00',
+              style: compact ? Theme.of(context).textTheme.labelSmall : null,
+            ),
           );
         }),
       ),
@@ -125,12 +195,14 @@ class _DayColumn extends StatelessWidget {
     required this.options,
     required this.width,
     required this.hourHeight,
+    required this.compact,
   });
 
   final WeekDay day;
   final List<CourseOption> options;
   final double width;
   final double hourHeight;
+  final bool compact;
 
   @override
   Widget build(BuildContext context) {
@@ -138,7 +210,13 @@ class _DayColumn extends StatelessWidget {
 
     for (final option in options) {
       for (final session in option.sessions.where((session) => session.day == day)) {
-        daySessions.add(_VisualClass(option: option, sessionStart: session.timeRange.start, sessionEnd: session.timeRange.end));
+        daySessions.add(
+          _VisualClass(
+            option: option,
+            sessionStart: session.timeRange.start,
+            sessionEnd: session.timeRange.end,
+          ),
+        );
       }
     }
 
@@ -154,7 +232,9 @@ class _DayColumn extends StatelessWidget {
               return Container(
                 height: hourHeight,
                 decoration: BoxDecoration(
-                  border: Border(bottom: BorderSide(color: Theme.of(context).dividerColor.withValues(alpha: 0.6))),
+                  border: Border(
+                    bottom: BorderSide(color: Theme.of(context).dividerColor.withOpacity(0.6)),
+                  ),
                 ),
               );
             }),
@@ -163,14 +243,18 @@ class _DayColumn extends StatelessWidget {
             final start = TimeUtils.parseTimeToMinutes(visualClass.sessionStart);
             final end = TimeUtils.parseTimeToMinutes(visualClass.sessionEnd);
             final top = ((start - AppTime.startMinutes) / 60) * hourHeight;
-            final height = ((end - start) / 60) * hourHeight;
+            final height = math.max(36.0, ((end - start) / 60) * hourHeight - 4);
+            final horizontalInset = compact ? 4.0 : 8.0;
 
             return Positioned(
-              left: 8,
-              right: 8,
+              left: horizontalInset,
+              right: horizontalInset,
               top: top + 2,
-              height: height - 4,
-              child: _ClassBlock(visualClass: visualClass),
+              height: height,
+              child: _ClassBlock(
+                visualClass: visualClass,
+                compact: compact,
+              ),
             );
           }),
         ],
@@ -180,46 +264,59 @@ class _DayColumn extends StatelessWidget {
 }
 
 class _ClassBlock extends StatelessWidget {
-  const _ClassBlock({required this.visualClass});
+  const _ClassBlock({
+    required this.visualClass,
+    required this.compact,
+  });
 
   final _VisualClass visualClass;
+  final bool compact;
 
   @override
   Widget build(BuildContext context) {
     final color = _colorFor(visualClass.option.subject, context);
 
     return Container(
-      padding: const EdgeInsets.all(8),
+      padding: EdgeInsets.all(compact ? 6 : 8),
       decoration: BoxDecoration(
-        color: color.withValues(alpha: 0.18),
+        color: color.withOpacity(0.18),
         border: Border.all(color: color, width: 1.2),
-        borderRadius: BorderRadius.circular(12),
+        borderRadius: BorderRadius.circular(compact ? 10 : 12),
       ),
       child: FittedBox(
         alignment: Alignment.topLeft,
         fit: BoxFit.scaleDown,
         child: SizedBox(
-          width: 150,
+          width: compact ? 96 : 150,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisSize: MainAxisSize.min,
             children: [
               Text(
                 visualClass.option.subject,
-                maxLines: 2,
+                maxLines: compact ? 1 : 2,
                 overflow: TextOverflow.ellipsis,
-                style: Theme.of(context).textTheme.labelLarge,
+                style: compact
+                    ? Theme.of(context).textTheme.labelMedium
+                    : Theme.of(context).textTheme.labelLarge,
               ),
               Text(
                 visualClass.option.professor,
-                maxLines: 2,
+                maxLines: compact ? 1 : 2,
                 overflow: TextOverflow.ellipsis,
                 style: Theme.of(context).textTheme.bodySmall,
               ),
               Text(
-                '${visualClass.sessionStart}-${visualClass.sessionEnd} · ${visualClass.option.section}',
+                '${visualClass.sessionStart}-${visualClass.sessionEnd}',
                 style: Theme.of(context).textTheme.bodySmall,
               ),
+              if (!compact)
+                Text(
+                  visualClass.option.section,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: Theme.of(context).textTheme.bodySmall,
+                ),
             ],
           ),
         ),

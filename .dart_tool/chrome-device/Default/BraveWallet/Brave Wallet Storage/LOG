@@ -1,2 +1,3 @@
-2026/06/27-14:27:49.880 c838 Creating DB /tmp/flutter_tools.AMPXFZ/flutter_tools_chrome_device.TWQGVK/Default/BraveWallet/Brave Wallet Storage since it was missing.
-2026/06/27-14:27:49.880 c838 Reusing MANIFEST /tmp/flutter_tools.AMPXFZ/flutter_tools_chrome_device.TWQGVK/Default/BraveWallet/Brave Wallet Storage/MANIFEST-000001
+2026/06/27-15:53:41.031 ebe1 Reusing MANIFEST /tmp/flutter_tools.XTWRAQ/flutter_tools_chrome_device.CMDFIB/Default/BraveWallet/Brave Wallet Storage/MANIFEST-000001
+2026/06/27-15:53:41.032 ebe1 Recovering log #3
+2026/06/27-15:53:41.032 ebe1 Reusing old log /tmp/flutter_tools.XTWRAQ/flutter_tools_chrome_device.CMDFIB/Default/BraveWallet/Brave Wallet Storage/000003.log 

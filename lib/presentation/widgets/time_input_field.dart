@@ -42,7 +42,9 @@ class _TimeInputFieldState extends State<TimeInputField> {
         ..style.border = '1px solid #c7c7c7'
         ..style.borderRadius = '12px'
         ..style.fontSize = '16px'
-        ..style.outline = 'none';
+        ..style.outline = 'none'
+        ..style.setProperty('appearance', 'none')
+        ..style.setProperty('-webkit-appearance', 'none');
 
       input.onChange.listen((_) {
         final value = input.value;

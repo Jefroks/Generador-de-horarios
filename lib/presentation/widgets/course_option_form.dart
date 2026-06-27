@@ -34,87 +34,84 @@ class _CourseOptionFormState extends State<CourseOptionForm> {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      child: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Form(
-          key: _formKey,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text('Agregar profesor/materia', style: Theme.of(context).textTheme.titleMedium),
-              const SizedBox(height: 12),
-              TextFormField(
-                controller: _subjectController,
-                decoration: const InputDecoration(
-                  labelText: 'Materia',
-                  border: OutlineInputBorder(),
-                ),
-                validator: (value) => value == null || value.trim().isEmpty ? 'Ingresa la materia' : null,
-              ),
-              const SizedBox(height: 12),
-              TextFormField(
-                controller: _professorController,
-                decoration: const InputDecoration(
-                  labelText: 'Profesor',
-                  border: OutlineInputBorder(),
-                ),
-                validator: (value) => value == null || value.trim().isEmpty ? 'Ingresa el profesor' : null,
-              ),
-              const SizedBox(height: 12),
-              TextFormField(
-                controller: _sectionController,
-                decoration: const InputDecoration(
-                  labelText: 'Sección / grupo',
-                  hintText: 'Ej. OO4',
-                  border: OutlineInputBorder(),
-                ),
-              ),
-              const SizedBox(height: 12),
-              const Text('Días'),
-              const SizedBox(height: 6),
-              DaySelector(
-                selectedDays: _selectedDays,
-                onChanged: (days) => setState(() => _selectedDays = days),
-              ),
-              const SizedBox(height: 12),
-              Row(
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        final isNarrow = constraints.maxWidth < 380;
+
+        return Card(
+          child: Padding(
+            padding: EdgeInsets.all(isNarrow ? 12 : 16),
+            child: Form(
+              key: _formKey,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Expanded(
-                    child: TimeInputField(
-                      label: 'Inicio',
-                      value: _start,
-                      onChanged: (value) => setState(() => _start = value),
+                  Text('Agregar profesor/materia', style: Theme.of(context).textTheme.titleMedium),
+                  const SizedBox(height: 12),
+                  TextFormField(
+                    controller: _subjectController,
+                    textInputAction: TextInputAction.next,
+                    decoration: const InputDecoration(
+                      labelText: 'Materia',
+                      border: OutlineInputBorder(),
+                    ),
+                    validator: (value) => value == null || value.trim().isEmpty ? 'Ingresa la materia' : null,
+                  ),
+                  const SizedBox(height: 12),
+                  TextFormField(
+                    controller: _professorController,
+                    textInputAction: TextInputAction.next,
+                    decoration: const InputDecoration(
+                      labelText: 'Profesor',
+                      border: OutlineInputBorder(),
+                    ),
+                    validator: (value) => value == null || value.trim().isEmpty ? 'Ingresa el profesor' : null,
+                  ),
+                  const SizedBox(height: 12),
+                  TextFormField(
+                    controller: _sectionController,
+                    textInputAction: TextInputAction.done,
+                    decoration: const InputDecoration(
+                      labelText: 'Sección / grupo',
+                      hintText: 'Ej. OO4',
+                      border: OutlineInputBorder(),
                     ),
                   ),
-                  const SizedBox(width: 12),
-                  Expanded(
-                    child: TimeInputField(
-                      label: 'Fin',
-                      value: _end,
-                      onChanged: (value) => setState(() => _end = value),
+                  const SizedBox(height: 12),
+                  const Text('Días'),
+                  const SizedBox(height: 6),
+                  DaySelector(
+                    selectedDays: _selectedDays,
+                    onChanged: (days) => setState(() => _selectedDays = days),
+                  ),
+                  const SizedBox(height: 12),
+                  _TimeRangeInputs(
+                    isNarrow: isNarrow,
+                    start: _start,
+                    end: _end,
+                    onStartChanged: (value) => setState(() => _start = value),
+                    onEndChanged: (value) => setState(() => _end = value),
+                  ),
+                  const SizedBox(height: 12),
+                  SizedBox(
+                    width: double.infinity,
+                    child: FilledButton.icon(
+                      icon: const Icon(Icons.add),
+                      label: const Text('Guardar opción'),
+                      onPressed: _submit,
                     ),
+                  ),
+                  const SizedBox(height: 8),
+                  Text(
+                    'Tip: si una materia tiene horarios distintos por día, guarda una opción por bloque o ajusta el JSON seed.',
+                    style: Theme.of(context).textTheme.bodySmall,
                   ),
                 ],
               ),
-              const SizedBox(height: 12),
-              SizedBox(
-                width: double.infinity,
-                child: FilledButton.icon(
-                  icon: const Icon(Icons.add),
-                  label: const Text('Guardar opción'),
-                  onPressed: _submit,
-                ),
-              ),
-              const SizedBox(height: 8),
-              Text(
-                'Tip: si una materia tiene horarios distintos por día, guarda una opción por bloque o ajusta el JSON seed.',
-                style: Theme.of(context).textTheme.bodySmall,
-              ),
-            ],
+            ),
           ),
-        ),
-      ),
+        );
+      },
     );
   }
 
@@ -152,5 +149,53 @@ class _CourseOptionFormState extends State<CourseOptionForm> {
 
   void _showMessage(String message) {
     ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(message)));
+  }
+}
+
+class _TimeRangeInputs extends StatelessWidget {
+  const _TimeRangeInputs({
+    required this.isNarrow,
+    required this.start,
+    required this.end,
+    required this.onStartChanged,
+    required this.onEndChanged,
+  });
+
+  final bool isNarrow;
+  final String start;
+  final String end;
+  final ValueChanged<String> onStartChanged;
+  final ValueChanged<String> onEndChanged;
+
+  @override
+  Widget build(BuildContext context) {
+    final startInput = TimeInputField(
+      label: 'Inicio',
+      value: start,
+      onChanged: onStartChanged,
+    );
+    final endInput = TimeInputField(
+      label: 'Fin',
+      value: end,
+      onChanged: onEndChanged,
+    );
+
+    if (isNarrow) {
+      return Column(
+        children: [
+          startInput,
+          const SizedBox(height: 12),
+          endInput,
+        ],
+      );
+    }
+
+    return Row(
+      children: [
+        Expanded(child: startInput),
+        const SizedBox(width: 12),
+        Expanded(child: endInput),
+      ],
+    );
   }
 }

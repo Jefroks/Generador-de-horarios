@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../core/constants/app_time.dart';
+import '../../core/layout/app_breakpoints.dart';
 import '../../core/utils/time_utils.dart';
 import '../../domain/entities/course_option.dart';
 import '../../domain/entities/week_day.dart';
@@ -15,9 +16,11 @@ class FreeTimeSummary extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final isMobile = AppBreakpoints.isMobile(MediaQuery.sizeOf(context).width);
+
     return Card(
       child: Padding(
-        padding: const EdgeInsets.all(16),
+        padding: EdgeInsets.all(isMobile ? 12 : 16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -26,8 +29,11 @@ class FreeTimeSummary extends StatelessWidget {
             ...WeekDay.values.map((day) {
               final freeBlocks = _freeBlocksForDay(day);
               return Padding(
-                padding: const EdgeInsets.only(bottom: 4),
-                child: Text('${day.shortLabel}: ${freeBlocks.isEmpty ? 'Sin huecos' : freeBlocks.join(' / ')}'),
+                padding: const EdgeInsets.only(bottom: 6),
+                child: Text(
+                  '${isMobile ? day.shortLabel : day.label}: ${freeBlocks.isEmpty ? 'Sin huecos' : freeBlocks.join(' / ')}',
+                  style: isMobile ? Theme.of(context).textTheme.bodySmall : null,
+                ),
               );
             }),
           ],

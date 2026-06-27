@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../../application/schedule_controller.dart';
+import '../../core/layout/app_breakpoints.dart';
 import '../../domain/entities/course_option.dart';
 import '../widgets/combination_bar.dart';
 import '../widgets/course_option_form.dart';
@@ -9,54 +10,136 @@ import '../widgets/course_option_tile.dart';
 import '../widgets/free_time_summary.dart';
 import '../widgets/schedule_grid.dart';
 
-class SchedulePlannerPage extends StatelessWidget {
+class SchedulePlannerPage extends StatefulWidget {
   const SchedulePlannerPage({super.key});
+
+  @override
+  State<SchedulePlannerPage> createState() => _SchedulePlannerPageState();
+}
+
+class _SchedulePlannerPageState extends State<SchedulePlannerPage> {
+  int _selectedMobileTab = 0;
 
   @override
   Widget build(BuildContext context) {
     final controller = context.watch<ScheduleController>();
 
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Generador visual de horarios'),
-        actions: [
-          Padding(
-            padding: const EdgeInsets.only(right: 16),
-            child: Center(
-              child: Text(
-                '${controller.validCombinations.length} combinaciones válidas',
-                style: Theme.of(context).textTheme.labelLarge,
-              ),
-            ),
-          ),
-        ],
-      ),
-      body: controller.isLoading
-          ? const Center(child: CircularProgressIndicator())
-          : Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                SizedBox(
-                  width: 420,
-                  child: _SidePanel(controller: controller),
-                ),
-                const VerticalDivider(width: 1),
-                Expanded(
-                  child: Column(
-                    children: [
-                      CombinationBar(
-                        combinations: controller.validCombinations,
-                        selectedIndex: controller.selectedCombinationIndex,
-                        onSelected: controller.selectCombination,
-                      ),
-                      Expanded(
-                        child: ScheduleGrid(options: controller.activeSchedule),
-                      ),
-                    ],
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        final isDesktop = AppBreakpoints.isDesktop(constraints.maxWidth);
+        final isMobile = AppBreakpoints.isMobile(constraints.maxWidth);
+
+        return Scaffold(
+          appBar: AppBar(
+            title: Text(isMobile ? 'Horarios' : 'Generador visual de horarios'),
+            actions: [
+              Padding(
+                padding: EdgeInsets.only(right: isMobile ? 8 : 16),
+                child: Center(
+                  child: Text(
+                    isMobile
+                        ? '${controller.validCombinations.length} válidas'
+                        : '${controller.validCombinations.length} combinaciones válidas',
+                    style: Theme.of(context).textTheme.labelLarge,
                   ),
                 ),
-              ],
-            ),
+              ),
+            ],
+          ),
+          body: controller.isLoading
+              ? const Center(child: CircularProgressIndicator())
+              : SafeArea(
+                  child: isDesktop
+                      ? _DesktopLayout(controller: controller)
+                      : _MobileLayout(
+                          controller: controller,
+                          selectedTab: _selectedMobileTab,
+                        ),
+                ),
+          bottomNavigationBar: isDesktop
+              ? null
+              : NavigationBar(
+                  selectedIndex: _selectedMobileTab,
+                  onDestinationSelected: (index) {
+                    setState(() => _selectedMobileTab = index);
+                  },
+                  destinations: const [
+                    NavigationDestination(
+                      icon: Icon(Icons.calendar_month_outlined),
+                      selectedIcon: Icon(Icons.calendar_month),
+                      label: 'Horario',
+                    ),
+                    NavigationDestination(
+                      icon: Icon(Icons.tune_outlined),
+                      selectedIcon: Icon(Icons.tune),
+                      label: 'Opciones',
+                    ),
+                  ],
+                ),
+        );
+      },
+    );
+  }
+}
+
+class _DesktopLayout extends StatelessWidget {
+  const _DesktopLayout({required this.controller});
+
+  final ScheduleController controller;
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        SizedBox(
+          width: 420,
+          child: _SidePanel(controller: controller),
+        ),
+        const VerticalDivider(width: 1),
+        Expanded(child: _ScheduleArea(controller: controller)),
+      ],
+    );
+  }
+}
+
+class _MobileLayout extends StatelessWidget {
+  const _MobileLayout({
+    required this.controller,
+    required this.selectedTab,
+  });
+
+  final ScheduleController controller;
+  final int selectedTab;
+
+  @override
+  Widget build(BuildContext context) {
+    if (selectedTab == 0) {
+      return _ScheduleArea(controller: controller);
+    }
+
+    return _SidePanel(controller: controller);
+  }
+}
+
+class _ScheduleArea extends StatelessWidget {
+  const _ScheduleArea({required this.controller});
+
+  final ScheduleController controller;
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        CombinationBar(
+          combinations: controller.validCombinations,
+          selectedIndex: controller.selectedCombinationIndex,
+          onSelected: controller.selectCombination,
+        ),
+        Expanded(
+          child: ScheduleGrid(options: controller.activeSchedule),
+        ),
+      ],
     );
   }
 }
@@ -73,19 +156,22 @@ class _SidePanel extends StatelessWidget {
       grouped.putIfAbsent(option.subject, () => []).add(option);
     }
 
+    final width = MediaQuery.sizeOf(context).width;
+    final isMobile = AppBreakpoints.isMobile(width);
+
     return ListView(
-      padding: const EdgeInsets.all(16),
+      padding: EdgeInsets.all(isMobile ? 12 : 16),
       children: [
         const CourseOptionForm(),
-        const SizedBox(height: 16),
+        SizedBox(height: isMobile ? 12 : 16),
         FreeTimeSummary(options: controller.activeSchedule),
-        const SizedBox(height: 16),
+        SizedBox(height: isMobile ? 12 : 16),
         Text('Profesores cargados', style: Theme.of(context).textTheme.titleMedium),
         const SizedBox(height: 8),
         ...grouped.entries.map(
           (entry) => Card(
             child: ExpansionTile(
-              initiallyExpanded: true,
+              initiallyExpanded: !isMobile,
               title: Text(entry.key),
               children: entry.value
                   .map(
@@ -100,6 +186,7 @@ class _SidePanel extends StatelessWidget {
             ),
           ),
         ),
+        const SizedBox(height: 24),
       ],
     );
   }

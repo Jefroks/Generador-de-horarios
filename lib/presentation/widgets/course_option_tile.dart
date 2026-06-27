@@ -22,17 +22,29 @@ class CourseOptionTile extends StatelessWidget {
         .map((session) => '${session.day.shortLabel} ${session.timeRange.start}-${session.timeRange.end}')
         .join(' / ');
 
-    return CheckboxListTile(
+    return ListTile(
       dense: true,
-      value: selected,
-      onChanged: (value) => onChanged(value ?? false),
-      title: Text('${option.professor} · ${option.section}'),
-      subtitle: Text(sessions),
-      secondary: IconButton(
+      contentPadding: const EdgeInsets.only(left: 8, right: 4),
+      leading: Checkbox(
+        value: selected,
+        onChanged: (value) => onChanged(value ?? false),
+      ),
+      title: Text(
+        '${option.professor} · ${option.section}',
+        maxLines: 2,
+        overflow: TextOverflow.ellipsis,
+      ),
+      subtitle: Text(
+        sessions,
+        maxLines: 3,
+        overflow: TextOverflow.ellipsis,
+      ),
+      trailing: IconButton(
         tooltip: 'Eliminar',
         icon: const Icon(Icons.delete_outline),
         onPressed: onDelete,
       ),
+      onTap: () => onChanged(!selected),
     );
   }
 }
