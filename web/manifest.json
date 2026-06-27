@@ -1,0 +1,9 @@
+{
+  "name": "Generador de horarios",
+  "short_name": "Horarios",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#3F51B5",
+  "description": "Generador visual de horarios local-first."
+}
