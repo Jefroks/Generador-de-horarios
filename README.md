@@ -12,12 +12,6 @@ Aplicación Flutter Web local-first para capturar profesores, materias, días y 
 - Visualización gráfica con bloques por día y hora.
 - Arquitectura separada por capas: domain, data, application y presentation.
 
-## Ejecutar
-
-```bash
-flutter pub get
-flutter run -d chrome
-```
 
 ## Reiniciar base local
 
