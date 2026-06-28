@@ -166,6 +166,17 @@ class _SidePanel extends StatelessWidget {
         SizedBox(height: isMobile ? 12 : 16),
         FreeTimeSummary(options: controller.activeSchedule),
         SizedBox(height: isMobile ? 12 : 16),
+        OutlinedButton.icon(
+          icon: const Icon(Icons.cloud_sync_outlined),
+          label: const Text('Recargar JSON publicado'),
+          onPressed: () => _reloadSeed(context),
+        ),
+        const SizedBox(height: 8),
+        Text(
+          'Úsalo cuando actualices web/data/professors_seed.json y quieras reemplazar la base local del navegador.',
+          style: Theme.of(context).textTheme.bodySmall,
+        ),
+        SizedBox(height: isMobile ? 12 : 16),
         Text('Profesores cargados', style: Theme.of(context).textTheme.titleMedium),
         const SizedBox(height: 8),
         ...grouped.entries.map(
@@ -188,6 +199,14 @@ class _SidePanel extends StatelessWidget {
         ),
         const SizedBox(height: 24),
       ],
+    );
+  }
+
+  Future<void> _reloadSeed(BuildContext context) async {
+    final messenger = ScaffoldMessenger.of(context);
+    await controller.reloadFromPublishedSeed();
+    messenger.showSnackBar(
+      const SnackBar(content: Text('JSON publicado recargado en la base local.')),
     );
   }
 }

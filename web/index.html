@@ -6,10 +6,50 @@
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
   <meta name="description" content="Generador visual de horarios local-first en Flutter Web.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Ayuda a que index.html no se quede viejo en navegadores durante desarrollo/despliegue. -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+
   <title>Generador de horarios</title>
-  <link rel="manifest" href="manifest.json">
+  <link rel="manifest" href="manifest.json?v=cachefix-1">
 </head>
 <body>
-  <script src="flutter_bootstrap.js" async></script>
+  <script>
+    // Limpieza preventiva: si alguna versión anterior se publicó como PWA,
+    // el service worker puede seguir sirviendo archivos viejos aunque el build nuevo
+    // use --pwa-strategy=none. Esto lo desregistra solo para el scope actual.
+    (function () {
+      if (!('serviceWorker' in navigator)) return;
+
+      window.addEventListener('load', function () {
+        var currentPath = window.location.pathname;
+
+        navigator.serviceWorker.getRegistrations().then(function (registrations) {
+          registrations.forEach(function (registration) {
+            var scopePath = new URL(registration.scope).pathname;
+            if (currentPath.indexOf(scopePath) === 0 || scopePath.indexOf(currentPath) === 0) {
+              registration.unregister();
+            }
+          });
+        });
+
+        if ('caches' in window) {
+          caches.keys().then(function (keys) {
+            keys
+              .filter(function (key) {
+                return key.indexOf('flutter') !== -1 ||
+                  key.indexOf('schedule') !== -1 ||
+                  key.indexOf('horario') !== -1 ||
+                  key.indexOf('Generador') !== -1;
+              })
+              .forEach(function (key) { caches.delete(key); });
+          });
+        }
+      });
+    })();
+  </script>
+  <script src="flutter_bootstrap.js?v=cachefix-1" async></script>
 </body>
 </html>

@@ -47,6 +47,19 @@ class ScheduleController extends ChangeNotifier {
     notifyListeners();
   }
 
+  Future<void> reloadFromPublishedSeed() async {
+    isLoading = true;
+    notifyListeners();
+
+    options = await repository.reloadFromPublishedSeed();
+    selectedCandidateIds = options.map((option) => option.id).toSet();
+    selectedCombinationIndex = 0;
+    generateCombinations();
+
+    isLoading = false;
+    notifyListeners();
+  }
+
   Future<void> addOption({
     required String subject,
     required String professor,
