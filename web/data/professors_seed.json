@@ -22,28 +22,6 @@
     ]
   },
   {
-    "id": "arq-oo5-hurtado",
-    "subject": "Arquitectura de Computadoras",
-    "professor": "José Miguel Hurtado Madrid",
-    "section": "OO5",
-    "sessions": [
-      {"day": "monday", "start": "13:00", "end": "14:00"},
-      {"day": "wednesday", "start": "13:00", "end": "15:00"},
-      {"day": "friday", "start": "13:00", "end": "15:00"}
-    ]
-  },
-  {
-    "id": "arq-oo3-contreras",
-    "subject": "Arquitectura de Computadoras",
-    "professor": "José Fernando Contreras Monsalvo",
-    "section": "OO3",
-    "sessions": [
-      {"day": "monday", "start": "09:00", "end": "10:00"},
-      {"day": "wednesday", "start": "09:00", "end": "11:00"},
-      {"day": "friday", "start": "09:00", "end": "11:00"}
-    ]
-  },
-  {
     "id": "arq-oo6-gregorio",
     "subject": "Arquitectura de Computadoras",
     "professor": "Gregorio Trinidad García",
@@ -52,28 +30,6 @@
       {"day": "monday", "start": "07:00", "end": "08:00"},
       {"day": "wednesday", "start": "07:00", "end": "09:00"},
       {"day": "friday", "start": "07:00", "end": "09:00"}
-    ]
-  },
-  {
-    "id": "red-oo1-ramirez",
-    "subject": "Redes Inalámbricas",
-    "professor": "Carlos Mauricio Ramírez Espitia",
-    "section": "OO1",
-    "sessions": [
-      {"day": "monday", "start": "07:00", "end": "08:00"},
-      {"day": "wednesday", "start": "07:00", "end": "09:00"},
-      {"day": "friday", "start": "07:00", "end": "09:00"}
-    ]
-  },
-  {
-    "id": "red-oo2-mauro",
-    "subject": "Redes Inalámbricas",
-    "professor": "Mauro Alberto López Muñoz",
-    "section": "OO2",
-    "sessions": [
-      {"day": "monday", "start": "13:00", "end": "14:00"},
-      {"day": "wednesday", "start": "13:00", "end": "15:00"},
-      {"day": "friday", "start": "13:00", "end": "15:00"}
     ]
   },
   {
@@ -88,39 +44,6 @@
     ]
   },
   {
-    "id": "red-oo4-colorado",
-    "subject": "Redes Inalámbricas",
-    "professor": "Guillermo Colorado Jiménez",
-    "section": "OO4",
-    "sessions": [
-      {"day": "monday", "start": "09:00", "end": "10:00"},
-      {"day": "wednesday", "start": "09:00", "end": "11:00"},
-      {"day": "friday", "start": "09:00", "end": "11:00"}
-    ]
-  },
-  {
-    "id": "red-oo5-colorado",
-    "subject": "Redes Inalámbricas",
-    "professor": "Guillermo Colorado Jiménez",
-    "section": "OO5",
-    "sessions": [
-      {"day": "monday", "start": "10:00", "end": "11:00"},
-      {"day": "tuesday", "start": "09:00", "end": "11:00"},
-      {"day": "thursday", "start": "09:00", "end": "11:00"}
-    ]
-  },
-  {
-    "id": "red-oo6-mauro",
-    "subject": "Redes Inalámbricas",
-    "professor": "Mauro Alberto López Muñoz",
-    "section": "OO6",
-    "sessions": [
-      {"day": "monday", "start": "14:00", "end": "15:00"},
-      {"day": "tuesday", "start": "13:00", "end": "15:00"},
-      {"day": "thursday", "start": "13:00", "end": "15:00"}
-    ]
-  },
-  {
     "id": "web-oo1-vera",
     "subject": "Desarrollo de Aplicaciones Web",
     "professor": "Eugenia Erica Vera Cervantes",
@@ -132,28 +55,6 @@
     ]
   },
   {
-    "id": "web-oo2-bello",
-    "subject": "Desarrollo de Aplicaciones Web",
-    "professor": "Pedro Bello López",
-    "section": "OO2",
-    "sessions": [
-      {"day": "monday", "start": "17:00", "end": "18:00"},
-      {"day": "wednesday", "start": "17:00", "end": "19:00"},
-      {"day": "friday", "start": "17:00", "end": "19:00"}
-    ]
-  },
-  {
-    "id": "web-oo3-elvira",
-    "subject": "Desarrollo de Aplicaciones Web",
-    "professor": "Roberto Elvira Enríquez",
-    "section": "OO3",
-    "sessions": [
-      {"day": "monday", "start": "16:00", "end": "17:00"},
-      {"day": "tuesday", "start": "15:00", "end": "17:00"},
-      {"day": "thursday", "start": "15:00", "end": "17:00"}
-    ]
-  },
-  {
     "id": "web-oo4-lomeli",
     "subject": "Desarrollo de Aplicaciones Web",
     "professor": "Miguel Ángel Vargas Lomelí",
@@ -162,28 +63,6 @@
       {"day": "monday", "start": "09:00", "end": "10:00"},
       {"day": "wednesday", "start": "09:00", "end": "11:00"},
       {"day": "friday", "start": "09:00", "end": "11:00"}
-    ]
-  },
-  {
-    "id": "web-oo5-toriz",
-    "subject": "Desarrollo de Aplicaciones Web",
-    "professor": "Alfredo Toriz Palacios",
-    "section": "OO5",
-    "sessions": [
-      {"day": "monday", "start": "10:00", "end": "11:00"},
-      {"day": "tuesday", "start": "09:00", "end": "11:00"},
-      {"day": "thursday", "start": "09:00", "end": "11:00"}
-    ]
-  },
-  {
-    "id": "web-oo6-josue",
-    "subject": "Desarrollo de Aplicaciones Web",
-    "professor": "Josué Pérez Lucero",
-    "section": "OO6",
-    "sessions": [
-      {"day": "monday", "start": "13:00", "end": "14:00"},
-      {"day": "wednesday", "start": "13:00", "end": "15:00"},
-      {"day": "friday", "start": "13:00", "end": "15:00"}
     ]
   },
   {
@@ -206,28 +85,6 @@
       {"day": "monday", "start": "13:00", "end": "14:00"},
       {"day": "wednesday", "start": "13:00", "end": "15:00"},
       {"day": "friday", "start": "13:00", "end": "15:00"}
-    ]
-  },
-  {
-    "id": "dist-oo5-orato",
-    "subject": "Programación Distribuida Aplicada",
-    "professor": "José Martín Orato Ramírez",
-    "section": "OO5",
-    "sessions": [
-      {"day": "monday", "start": "10:00", "end": "11:00"},
-      {"day": "tuesday", "start": "09:00", "end": "11:00"},
-      {"day": "thursday", "start": "09:00", "end": "11:00"}
-    ]
-  },
-  {
-    "id": "dist-oo6-vilarino",
-    "subject": "Programación Distribuida Aplicada",
-    "professor": "Darnes Vilariño Ayala",
-    "section": "OO6",
-    "sessions": [
-      {"day": "monday", "start": "12:00", "end": "13:00"},
-      {"day": "tuesday", "start": "11:00", "end": "13:00"},
-      {"day": "thursday", "start": "11:00", "end": "13:00"}
     ]
   },
   {
