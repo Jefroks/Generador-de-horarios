@@ -1,0 +1,1 @@
+ /home/jefroks/OneDrive/Documentos/Jeremy\ H.B/Escuela/Uni/7mo\ semestre/Generador\ de\ horarios/.dart_tool/flutter_build/5ba373ed3597b99adebf7a3895e83439/native_assets.json: 
