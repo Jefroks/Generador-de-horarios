@@ -19,4 +19,9 @@ class LocalCourseOptionRepository implements CourseOptionRepository {
       options.map((option) => CourseOptionModel.fromEntity(option)).toList(),
     );
   }
+
+  @override
+  Future<List<CourseOption>> reloadFromPublishedSeed() {
+    return datasource.reloadFromPublishedSeed();
+  }
 }
