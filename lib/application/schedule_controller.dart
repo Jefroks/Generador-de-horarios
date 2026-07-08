@@ -118,10 +118,19 @@ class ScheduleController extends ChangeNotifier {
     notifyListeners();
   }
 
-  void generateCombinations() {
-    validCombinations = combinationService.generateValidCombinations(selectedCandidates);
-    if (selectedCombinationIndex >= validCombinations.length) {
-      selectedCombinationIndex = 0;
-    }
+void generateCombinations() {
+  final candidates = selectedCandidates;
+
+  if (candidates.isEmpty) {
+    validCombinations = [];
+    selectedCombinationIndex = 0;
+    return;
   }
+
+  validCombinations = combinationService.generateValidCombinations(candidates);
+
+  if (selectedCombinationIndex >= validCombinations.length) {
+    selectedCombinationIndex = 0;
+  }
+}
 }
