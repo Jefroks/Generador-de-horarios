@@ -301,8 +301,12 @@ class _ClassBlock extends StatelessWidget {
           final subjectSize = compact ? 14.5 : (spacious ? 19.0 : 17.0);
           final professorSize = compact ? 12.8 : (spacious ? 15.5 : 14.0);
           final detailSize = compact ? 12.4 : (spacious ? 14.5 : 13.2);
-          final showProfessor = availableHeight >= (compact ? 36 : 42);
-          final showSection = !compact && availableHeight >= 76;
+          final nrc = visualClass.option.nrc.trim();
+          final nrcLine = nrc.isEmpty
+              ? visualClass.option.section
+              : 'NRC $nrc · ${visualClass.option.section}';
+          final showProfessor = availableHeight >= (compact ? 44 : 48);
+          final showSection = !compact && availableHeight >= 82;
 
           return FittedBox(
             alignment: Alignment.topLeft,
@@ -319,6 +323,16 @@ class _ClassBlock extends StatelessWidget {
                     overflow: TextOverflow.ellipsis,
                     style: TextStyle(
                       fontSize: subjectSize,
+                      fontWeight: FontWeight.w800,
+                      height: 1.05,
+                    ),
+                  ),
+                  Text(
+                    nrcLine,
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: TextStyle(
+                      fontSize: detailSize,
                       fontWeight: FontWeight.w800,
                       height: 1.05,
                     ),
@@ -342,7 +356,7 @@ class _ClassBlock extends StatelessWidget {
                       height: 1.05,
                     ),
                   ),
-                  if (showSection)
+                  if (showSection && nrc.isEmpty)
                     Text(
                       visualClass.option.section,
                       maxLines: 1,

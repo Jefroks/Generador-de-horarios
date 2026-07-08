@@ -6,6 +6,7 @@ class CourseOption {
     required this.subject,
     required this.professor,
     required this.section,
+    required this.nrc,
     required this.sessions,
   });
 
@@ -13,7 +14,11 @@ class CourseOption {
   final String subject;
   final String professor;
   final String section;
+  final String nrc;
   final List<ClassSession> sessions;
 
-  String get displayName => '$subject · $professor · $section';
+  String get displayName {
+    final nrcLabel = nrc.trim().isEmpty ? '' : ' · NRC $nrc';
+    return '$subject · $professor · $section$nrcLabel';
+  }
 }

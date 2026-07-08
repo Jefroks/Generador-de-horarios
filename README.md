@@ -48,6 +48,7 @@ El formato puede ser una lista directa:
     "subject": "Desarrollo de Aplicaciones Web",
     "professor": "Miguel Ángel Vargas Lomelí",
     "section": "OO4",
+    "nrc": "24671",
     "sessions": [
       {"day": "monday", "start": "09:00", "end": "10:00"},
       {"day": "wednesday", "start": "09:00", "end": "11:00"},
@@ -58,6 +59,27 @@ El formato puede ser una lista directa:
 ```
 
 También acepta un objeto con `items`, `options` o `courses`.
+
+## NRC visible en el horario
+
+Cada materia puede incluir el campo opcional `nrc`. Si existe, se muestra en:
+
+- La tarjeta/lista de profesores.
+- El bloque visual dentro del horario.
+- El JSON guardado localmente.
+
+Ejemplo:
+
+```json
+{
+  "id": "web-oo4-lomeli",
+  "subject": "Desarrollo de Aplicaciones Web",
+  "professor": "Miguel Ángel Vargas Lomelí",
+  "section": "OO4",
+  "nrc": "24671",
+  "sessions": []
+}
+```
 
 ## Ejecutar localmente
 

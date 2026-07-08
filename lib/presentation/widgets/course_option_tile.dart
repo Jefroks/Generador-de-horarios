@@ -22,6 +22,8 @@ class CourseOptionTile extends StatelessWidget {
         .map((session) => '${session.day.shortLabel} ${session.timeRange.start}-${session.timeRange.end}')
         .join(' / ');
 
+    final nrcLabel = option.nrc.trim().isEmpty ? '' : ' · NRC ${option.nrc}';
+
     return ListTile(
       dense: true,
       contentPadding: const EdgeInsets.only(left: 8, right: 4),
@@ -30,7 +32,7 @@ class CourseOptionTile extends StatelessWidget {
         onChanged: (value) => onChanged(value ?? false),
       ),
       title: Text(
-        '${option.professor} · ${option.section}',
+        '${option.professor} · ${option.section}$nrcLabel',
         maxLines: 2,
         overflow: TextOverflow.ellipsis,
       ),

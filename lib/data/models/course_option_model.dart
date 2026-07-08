@@ -8,6 +8,7 @@ class CourseOptionModel extends CourseOption {
     required super.subject,
     required super.professor,
     required super.section,
+    required super.nrc,
     required super.sessions,
   });
 
@@ -17,6 +18,7 @@ class CourseOptionModel extends CourseOption {
       subject: json['subject'] as String,
       professor: json['professor'] as String,
       section: json['section'] as String? ?? '',
+      nrc: _readString(json['nrc']),
       sessions: (json['sessions'] as List<dynamic>)
           .map((item) => ClassSessionModel.fromJson(item as Map<String, dynamic>))
           .toList(),
@@ -29,6 +31,7 @@ class CourseOptionModel extends CourseOption {
       subject: entity.subject,
       professor: entity.professor,
       section: entity.section,
+      nrc: entity.nrc,
       sessions: entity.sessions
           .map((ClassSession session) => ClassSessionModel.fromEntity(session))
           .toList(),
@@ -41,9 +44,15 @@ class CourseOptionModel extends CourseOption {
       'subject': subject,
       'professor': professor,
       'section': section,
+      'nrc': nrc,
       'sessions': sessions
           .map((session) => ClassSessionModel.fromEntity(session).toJson())
           .toList(),
     };
+  }
+
+  static String _readString(dynamic value) {
+    if (value == null) return '';
+    return value.toString().trim();
   }
 }

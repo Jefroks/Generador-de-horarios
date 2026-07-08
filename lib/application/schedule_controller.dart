@@ -67,6 +67,7 @@ class ScheduleController extends ChangeNotifier {
     required String subject,
     required String professor,
     required String section,
+    required String nrc,
     required List<WeekDay> days,
     required String start,
     required String end,
@@ -85,6 +86,7 @@ class ScheduleController extends ChangeNotifier {
       subject: subject.trim(),
       professor: professor.trim(),
       section: section.trim().isEmpty ? 'Sin sección' : section.trim(),
+      nrc: nrc.trim(),
       sessions: sessions,
     );
 

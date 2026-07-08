@@ -4,6 +4,7 @@
     "subject": "Arquitectura de Computadoras",
     "professor": "María Eugenia Sánchez Gálvez",
     "section": "OO1",
+    "nrc": "21928",
     "sessions": [
       {
         "day": "monday",
@@ -27,6 +28,7 @@
     "subject": "Arquitectura de Computadoras",
     "professor": "Gustavo Rubin Linares",
     "section": "OO4",
+    "nrc": "22006",
     "sessions": [
       {
         "day": "monday",
@@ -50,6 +52,7 @@
     "subject": "Arquitectura de Computadoras",
     "professor": "José Miguel Hurtado Madrid",
     "section": "OO5",
+    "nrc": "22041",
     "sessions": [
       {
         "day": "monday",
@@ -73,6 +76,7 @@
     "subject": "Arquitectura de Computadoras",
     "professor": "José Fernando Contreras Monsalvo",
     "section": "OO3",
+    "nrc": "22066",
     "sessions": [
       {
         "day": "monday",
@@ -96,6 +100,7 @@
     "subject": "Arquitectura de Computadoras",
     "professor": "Gregorio Trinidad García",
     "section": "OO6",
+    "nrc": "22086",
     "sessions": [
       {
         "day": "monday",
@@ -119,6 +124,7 @@
     "subject": "Redes Inalámbricas",
     "professor": "Carlos Mauricio Ramírez Espitia",
     "section": "OO1",
+    "nrc": "25676",
     "sessions": [
       {
         "day": "monday",
@@ -142,6 +148,7 @@
     "subject": "Redes Inalámbricas",
     "professor": "Mauro Alberto López Muñoz",
     "section": "OO2",
+    "nrc": "25719",
     "sessions": [
       {
         "day": "monday",
@@ -165,6 +172,7 @@
     "subject": "Redes Inalámbricas",
     "professor": "Luis Enrique Morales Aguilar",
     "section": "OO3",
+    "nrc": "25745",
     "sessions": [
       {
         "day": "monday",
@@ -188,6 +196,7 @@
     "subject": "Redes Inalámbricas",
     "professor": "Guillermo Colorado Jiménez",
     "section": "OO4",
+    "nrc": "25766",
     "sessions": [
       {
         "day": "monday",
@@ -211,6 +220,7 @@
     "subject": "Redes Inalámbricas",
     "professor": "Guillermo Colorado Jiménez",
     "section": "OO5",
+    "nrc": "25782",
     "sessions": [
       {
         "day": "monday",
@@ -234,6 +244,7 @@
     "subject": "Redes Inalámbricas",
     "professor": "Mauro Alberto López Muñoz",
     "section": "OO6",
+    "nrc": "25806",
     "sessions": [
       {
         "day": "monday",
@@ -257,6 +268,7 @@
     "subject": "Desarrollo de Aplicaciones Web",
     "professor": "Eugenia Erica Vera Cervantes",
     "section": "OO1",
+    "nrc": "24575",
     "sessions": [
       {
         "day": "monday",
@@ -280,6 +292,7 @@
     "subject": "Desarrollo de Aplicaciones Web",
     "professor": "Pedro Bello López",
     "section": "OO2",
+    "nrc": "24604",
     "sessions": [
       {
         "day": "monday",
@@ -303,6 +316,7 @@
     "subject": "Desarrollo de Aplicaciones Web",
     "professor": "Roberto Elvira Enríquez",
     "section": "OO3",
+    "nrc": "24624",
     "sessions": [
       {
         "day": "monday",
@@ -326,6 +340,7 @@
     "subject": "Desarrollo de Aplicaciones Web",
     "professor": "Miguel Ángel Vargas Lomelí",
     "section": "OO4",
+    "nrc": "24671",
     "sessions": [
       {
         "day": "monday",
@@ -349,6 +364,7 @@
     "subject": "Desarrollo de Aplicaciones Web",
     "professor": "Alfredo Toriz Palacios",
     "section": "OO5",
+    "nrc": "24701",
     "sessions": [
       {
         "day": "monday",
@@ -372,6 +388,7 @@
     "subject": "Desarrollo de Aplicaciones Web",
     "professor": "Josué Pérez Lucero",
     "section": "OO6",
+    "nrc": "24715",
     "sessions": [
       {
         "day": "monday",
@@ -395,6 +412,7 @@
     "subject": "Programación Distribuida Aplicada",
     "professor": "Mariano Larios Gómez",
     "section": "OO1",
+    "nrc": "25756",
     "sessions": [
       {
         "day": "monday",
@@ -418,6 +436,7 @@
     "subject": "Programación Distribuida Aplicada",
     "professor": "Alberto Román Flores",
     "section": "OO2",
+    "nrc": "25770",
     "sessions": [
       {
         "day": "monday",
@@ -441,6 +460,7 @@
     "subject": "Programación Distribuida Aplicada",
     "professor": "José Martín Orato Ramírez",
     "section": "OO5",
+    "nrc": "25789",
     "sessions": [
       {
         "day": "monday",
@@ -464,6 +484,7 @@
     "subject": "Programación Distribuida Aplicada",
     "professor": "Darnes Vilariño Ayala",
     "section": "OO6",
+    "nrc": "25794",
     "sessions": [
       {
         "day": "monday",
@@ -487,6 +508,7 @@
     "subject": "Técnicas de Inteligencia Artificial",
     "professor": "Maya Carrillo Ruiz",
     "section": "OO7",
+    "nrc": "24769",
     "sessions": [
       {
         "day": "monday",
@@ -510,6 +532,7 @@
     "subject": "Técnicas de Inteligencia Artificial",
     "professor": "Luis René Marcial Castillo",
     "section": "OO5",
+    "nrc": "24791",
     "sessions": [
       {
         "day": "monday",
@@ -533,6 +556,7 @@
     "subject": "Técnicas de Inteligencia Artificial",
     "professor": "Luis Carlos Altamirano Robles",
     "section": "OO4",
+    "nrc": "24824",
     "sessions": [
       {
         "day": "monday",
@@ -556,6 +580,7 @@
     "subject": "Técnicas de Inteligencia Artificial",
     "professor": "Marcela Rivera Martínez",
     "section": "OO3",
+    "nrc": "24842",
     "sessions": [
       {
         "day": "monday",
@@ -579,6 +604,7 @@
     "subject": "Técnicas de Inteligencia Artificial",
     "professor": "Marcela Rivera Martínez",
     "section": "OO2",
+    "nrc": "24859",
     "sessions": [
       {
         "day": "monday",
@@ -602,6 +628,7 @@
     "subject": "Técnicas de Inteligencia Artificial",
     "professor": "Abraham Sánchez López",
     "section": "OO1",
+    "nrc": "25723",
     "sessions": [
       {
         "day": "monday",
@@ -625,6 +652,7 @@
     "subject": "Técnicas de Inteligencia Artificial",
     "professor": "Iván Olmos Pineda",
     "section": "OO8",
+    "nrc": "34048",
     "sessions": [
       {
         "day": "monday",
@@ -648,6 +676,7 @@
     "subject": "Teoría de Control",
     "professor": "Gustavo Rubin Linares",
     "section": "OO5",
+    "nrc": "24659",
     "sessions": [
       {
         "day": "monday",
@@ -671,6 +700,7 @@
     "subject": "Teoría de Control",
     "professor": "Gregorio Trinidad García",
     "section": "OO4",
+    "nrc": "24709",
     "sessions": [
       {
         "day": "monday",
@@ -694,6 +724,7 @@
     "subject": "Teoría de Control",
     "professor": "Abraham Maldonado García",
     "section": "OO2",
+    "nrc": "24739",
     "sessions": [
       {
         "day": "monday",
@@ -717,6 +748,7 @@
     "subject": "Teoría de Control",
     "professor": "María Eugenia Sánchez Gálvez",
     "section": "OO1",
+    "nrc": "24749",
     "sessions": [
       {
         "day": "monday",
@@ -740,6 +772,7 @@
     "subject": "Administración Estratégica",
     "professor": "Ricardo Díaz Pérez",
     "section": "OO1",
+    "nrc": "23783",
     "sessions": [
       {
         "day": "monday",
@@ -768,6 +801,7 @@
     "subject": "Administración Estratégica",
     "professor": "María Dimpna Mora Villegas",
     "section": "OO2",
+    "nrc": "23786",
     "sessions": [
       {
         "day": "monday",
@@ -796,6 +830,7 @@
     "subject": "Administración Estratégica",
     "professor": "Luis Fernando Aceves Cabrera",
     "section": "OO3",
+    "nrc": "23787",
     "sessions": [
       {
         "day": "monday",
@@ -824,6 +859,7 @@
     "subject": "Administración Estratégica",
     "professor": "María Rocío Torres Soto",
     "section": "OO4",
+    "nrc": "23788",
     "sessions": [
       {
         "day": "monday",
@@ -852,6 +888,7 @@
     "subject": "Administración Estratégica",
     "professor": "Luis Fernando Aceves Cabrera",
     "section": "OO5",
+    "nrc": "23789",
     "sessions": [
       {
         "day": "monday",
@@ -880,6 +917,7 @@
     "subject": "Administración de Procesos Productivos",
     "professor": "Rosa Adriana Vázquez Sánchez",
     "section": "OO1",
+    "nrc": "23352",
     "sessions": [
       {
         "day": "monday",
@@ -908,6 +946,7 @@
     "subject": "Administración de Procesos Productivos",
     "professor": "Alejandro Pérez Lara Vicuña",
     "section": "OO2",
+    "nrc": "23362",
     "sessions": [
       {
         "day": "monday",
@@ -936,6 +975,7 @@
     "subject": "Administración de Procesos Productivos",
     "professor": "María del Pilar Guadalupe Palacios Polo",
     "section": "OO3",
+    "nrc": "23370",
     "sessions": [
       {
         "day": "monday",
@@ -964,6 +1004,7 @@
     "subject": "Administración de Procesos Productivos",
     "professor": "María del Pilar Guadalupe Palacios Polo",
     "section": "OO4",
+    "nrc": "23378",
     "sessions": [
       {
         "day": "monday",
@@ -992,6 +1033,7 @@
     "subject": "Administración de Procesos Productivos",
     "professor": "María del Pilar Guadalupe Palacios Polo",
     "section": "OO5",
+    "nrc": "23383",
     "sessions": [
       {
         "day": "monday",
@@ -1020,6 +1062,7 @@
     "subject": "Administración de Procesos Productivos",
     "professor": "Rosario Martínez León",
     "section": "OO6",
+    "nrc": "23389",
     "sessions": [
       {
         "day": "monday",
@@ -1048,6 +1091,7 @@
     "subject": "Gestión y Desarrollo del Capital Humano",
     "professor": "Marco Tulio Toxqui Mendoza",
     "section": "OO1",
+    "nrc": "31737",
     "sessions": [
       {
         "day": "monday",
@@ -1076,6 +1120,7 @@
     "subject": "Gestión y Desarrollo del Capital Humano",
     "professor": "Rosa María Jaime Ursúa Chanes",
     "section": "OO2",
+    "nrc": "31738",
     "sessions": [
       {
         "day": "monday",
@@ -1104,6 +1149,7 @@
     "subject": "Gestión y Desarrollo del Capital Humano",
     "professor": "María del Rosario Candia Díaz",
     "section": "OO3",
+    "nrc": "31740",
     "sessions": [
       {
         "day": "monday",
@@ -1132,6 +1178,7 @@
     "subject": "Gestión y Desarrollo del Capital Humano",
     "professor": "María Alicia Córdova Cortázar",
     "section": "OO4",
+    "nrc": "31741",
     "sessions": [
       {
         "day": "monday",
@@ -1160,6 +1207,7 @@
     "subject": "Gestión y Desarrollo del Capital Humano",
     "professor": "María Alicia Córdova Cortázar",
     "section": "OO5",
+    "nrc": "31742",
     "sessions": [
       {
         "day": "monday",
@@ -1188,6 +1236,7 @@
     "subject": "Contabilidad de Impuestos",
     "professor": "María Elba Briones Hernández",
     "section": "OO1",
+    "nrc": "28838",
     "sessions": [
       {
         "day": "monday",
@@ -1216,6 +1265,7 @@
     "subject": "Contabilidad de Impuestos",
     "professor": "Alejandro Ahumada Fortiz",
     "section": "OO2",
+    "nrc": "28842",
     "sessions": [
       {
         "day": "monday",
@@ -1244,6 +1294,7 @@
     "subject": "Contabilidad de Impuestos",
     "professor": "Alejandro Ahumada Fortiz",
     "section": "OO3",
+    "nrc": "28849",
     "sessions": [
       {
         "day": "monday",
@@ -1272,6 +1323,7 @@
     "subject": "Derecho de la Seguridad Social",
     "professor": "Mario Luis Mena Arrazola",
     "section": "OO1",
+    "nrc": "29247",
     "sessions": [
       {
         "day": "monday",
@@ -1300,6 +1352,7 @@
     "subject": "Derecho de la Seguridad Social",
     "professor": "Mario Luis Mena Arrazola",
     "section": "OO2",
+    "nrc": "29250",
     "sessions": [
       {
         "day": "monday",
@@ -1328,6 +1381,7 @@
     "subject": "Derecho de la Seguridad Social",
     "professor": "Guadalupe Arnulfo Hernández Vivanco",
     "section": "OO3",
+    "nrc": "29251",
     "sessions": [
       {
         "day": "monday",
@@ -1356,6 +1410,7 @@
     "subject": "Derecho de la Seguridad Social",
     "professor": "Guadalupe Arnulfo Hernández Vivanco",
     "section": "OO4",
+    "nrc": "29253",
     "sessions": [
       {
         "day": "monday",
@@ -1384,6 +1439,7 @@
     "subject": "Derecho de la Seguridad Social",
     "professor": "Jesús Ambriz Morales",
     "section": "OO5",
+    "nrc": "29254",
     "sessions": [
       {
         "day": "monday",
@@ -1412,6 +1468,7 @@
     "subject": "Desarrollo Emprendedor",
     "professor": "Nicolás Bonilla Maldonado",
     "section": "OO1",
+    "nrc": "29481",
     "sessions": [
       {
         "day": "monday",
@@ -1440,6 +1497,7 @@
     "subject": "Desarrollo Emprendedor",
     "professor": "Nicolás Bonilla Maldonado",
     "section": "OO2",
+    "nrc": "29483",
     "sessions": [
       {
         "day": "monday",
@@ -1468,6 +1526,7 @@
     "subject": "Desarrollo Emprendedor",
     "professor": "Ana Claudia Zenteno Vázquez",
     "section": "OO3",
+    "nrc": "29484",
     "sessions": [
       {
         "day": "monday",
@@ -1496,6 +1555,7 @@
     "subject": "Desarrollo Emprendedor",
     "professor": "María Dimpna Mora Villegas",
     "section": "OO4",
+    "nrc": "29485",
     "sessions": [
       {
         "day": "monday",
@@ -1524,6 +1584,7 @@
     "subject": "Desarrollo Emprendedor",
     "professor": "Marco Tulio Toxqui Mendoza",
     "section": "OO5",
+    "nrc": "29487",
     "sessions": [
       {
         "day": "monday",
@@ -1552,6 +1613,7 @@
     "subject": "Desarrollo Emprendedor",
     "professor": "María Dimpna Mora Villegas",
     "section": "OO6",
+    "nrc": "29488",
     "sessions": [
       {
         "day": "friday",
@@ -1565,6 +1627,7 @@
     "subject": "Comportamiento del Consumidor",
     "professor": "Juan Adrián Romero Ávila",
     "section": "OO1",
+    "nrc": "26572",
     "sessions": [
       {
         "day": "monday",
@@ -1593,6 +1656,7 @@
     "subject": "Comportamiento del Consumidor",
     "professor": "Juan Adrián Romero Ávila",
     "section": "OO2",
+    "nrc": "26574",
     "sessions": [
       {
         "day": "monday",
@@ -1621,6 +1685,7 @@
     "subject": "Comportamiento del Consumidor",
     "professor": "Armando Lira Gutiérrez",
     "section": "OO3",
+    "nrc": "26577",
     "sessions": [
       {
         "day": "monday",
@@ -1649,6 +1714,7 @@
     "subject": "Comportamiento del Consumidor",
     "professor": "Leobardo de Jesús Vargas Vallejo",
     "section": "OO4",
+    "nrc": "26578",
     "sessions": [
       {
         "day": "monday",
@@ -1677,6 +1743,7 @@
     "subject": "Comportamiento del Consumidor",
     "professor": "Diana Paulina Tlaczani Romero",
     "section": "OO5",
+    "nrc": "26581",
     "sessions": [
       {
         "day": "monday",
@@ -1705,6 +1772,7 @@
     "subject": "Medios digitales para posicionar a la empresa",
     "professor": "Irene Izazaga Pérez",
     "section": "OO1",
+    "nrc": "34159",
     "sessions": [
       {
         "day": "monday",
@@ -1733,6 +1801,7 @@
     "subject": "Medios digitales para posicionar a la empresa",
     "professor": "Irene Izazaga Pérez",
     "section": "OO2",
+    "nrc": "34166",
     "sessions": [
       {
         "day": "monday",
@@ -1761,6 +1830,7 @@
     "subject": "Medios digitales para posicionar a la empresa",
     "professor": "Irene Izazaga Pérez",
     "section": "OO3",
+    "nrc": "34168",
     "sessions": [
       {
         "day": "monday",
@@ -1789,6 +1859,7 @@
     "subject": "Estadística aplicada a los negocios",
     "professor": "Roberto Rugarcía Bou",
     "section": "OO1",
+    "nrc": "31276",
     "sessions": [
       {
         "day": "monday",
@@ -1817,6 +1888,7 @@
     "subject": "Estadística aplicada a los negocios",
     "professor": "Araceli Bertha Pérez Solís",
     "section": "OO2",
+    "nrc": "31282",
     "sessions": [
       {
         "day": "monday",
@@ -1845,6 +1917,7 @@
     "subject": "Creación del valor compartido",
     "professor": "José Roberto González Trejo",
     "section": "OO1",
+    "nrc": "29226",
     "sessions": [
       {
         "day": "monday",
@@ -1873,6 +1946,7 @@
     "subject": "Creación del valor compartido",
     "professor": "José Roberto González Trejo",
     "section": "OO2",
+    "nrc": "29232",
     "sessions": [
       {
         "day": "monday",
@@ -1901,6 +1975,7 @@
     "subject": "Creación del valor compartido",
     "professor": "José Roberto González Trejo",
     "section": "OO3",
+    "nrc": "29237",
     "sessions": [
       {
         "day": "friday",
@@ -1914,6 +1989,7 @@
     "subject": "Creación del valor compartido",
     "professor": "Rosa de las Nieves Galaz Vega",
     "section": "OO4",
+    "nrc": "29238",
     "sessions": [
       {
         "day": "friday",
@@ -1927,6 +2003,7 @@
     "subject": "Comunicaciones Integradas del Marketing",
     "professor": "Leobardo de Jesús Vargas Vallejo",
     "section": "OO1",
+    "nrc": "28241",
     "sessions": [
       {
         "day": "monday",
@@ -1955,6 +2032,7 @@
     "subject": "Comunicaciones Integradas del Marketing",
     "professor": "Leobardo de Jesús Vargas Vallejo",
     "section": "OO2",
+    "nrc": "28250",
     "sessions": [
       {
         "day": "monday",
@@ -1983,6 +2061,7 @@
     "subject": "Comunicaciones Integradas del Marketing",
     "professor": "Rosa de las Nieves Galaz Vega",
     "section": "OO3",
+    "nrc": "28352",
     "sessions": [
       {
         "day": "monday",
@@ -2011,6 +2090,7 @@
     "subject": "Comunicaciones Integradas del Marketing",
     "professor": "Ángel Romero Graciano",
     "section": "OO4",
+    "nrc": "28355",
     "sessions": [
       {
         "day": "monday",
@@ -2039,6 +2119,7 @@
     "subject": "Mercadotecnia de Servicios",
     "professor": "Ángel Romero Graciano",
     "section": "OO1",
+    "nrc": "34350",
     "sessions": [
       {
         "day": "monday",
@@ -2067,6 +2148,7 @@
     "subject": "Mercadotecnia de Servicios",
     "professor": "Lizbeth Carmona Morales",
     "section": "OO2",
+    "nrc": "34361",
     "sessions": [
       {
         "day": "friday",
@@ -2080,6 +2162,7 @@
     "subject": "Gestión Logística",
     "professor": "Guadalupe Tlaxcalteca Tlahuel",
     "section": "OO1",
+    "nrc": "31820",
     "sessions": [
       {
         "day": "monday",
@@ -2108,6 +2191,7 @@
     "subject": "Gestión Logística",
     "professor": "Rosario Martínez León",
     "section": "OO2",
+    "nrc": "31822",
     "sessions": [
       {
         "day": "monday",
@@ -2136,6 +2220,7 @@
     "subject": "Estadística para la Toma de Decisiones",
     "professor": "David Mora Rodríguez",
     "section": "OO1",
+    "nrc": "31294",
     "sessions": [
       {
         "day": "monday",
@@ -2164,6 +2249,7 @@
     "subject": "Análisis y Administración de Riesgos",
     "professor": "Marco Tulio Toxqui Mendoza",
     "section": "OO1",
+    "nrc": "25121",
     "sessions": [
       {
         "day": "monday",
@@ -2192,6 +2278,7 @@
     "subject": "Análisis y Administración de Riesgos",
     "professor": "Marco Tulio Toxqui Mendoza",
     "section": "OO2",
+    "nrc": "25115",
     "sessions": [
       {
         "day": "monday",
@@ -2220,6 +2307,7 @@
     "subject": "Emprendimiento Social",
     "professor": "Leobardo de Jesús Vargas Vallejo",
     "section": "OO1",
+    "nrc": "29960",
     "sessions": [
       {
         "day": "monday",

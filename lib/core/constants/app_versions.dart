@@ -6,7 +6,7 @@ class AppVersions {
   /// --dart-define=SEED_DATA_VERSION=${{ github.sha }}
   static const String seedDataVersion = String.fromEnvironment(
     'SEED_DATA_VERSION',
-    defaultValue: 'local-cachefix-1',
+    defaultValue: 'nrc-visible-1',
   );
 
   /// Archivo JSON público servido desde la carpeta web/.

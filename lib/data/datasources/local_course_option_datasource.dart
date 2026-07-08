@@ -15,8 +15,8 @@ class LocalCourseOptionDataSource {
   final SharedPreferences preferences;
   final http.Client _httpClient;
 
-  static const String _storageKey = 'course_options_json_v2';
-  static const String _seedHashKey = 'course_options_seed_hash_v2';
+  static const String _storageKey = 'course_options_json_v3';
+  static const String _seedHashKey = 'course_options_seed_hash_v3';
   static const String _assetSeedPath = 'assets/data/professors_seed.json';
 
   Future<List<CourseOptionModel>> getAll() async {

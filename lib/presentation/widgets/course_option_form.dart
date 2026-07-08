@@ -19,6 +19,7 @@ class _CourseOptionFormState extends State<CourseOptionForm> {
   final _subjectController = TextEditingController();
   final _professorController = TextEditingController();
   final _sectionController = TextEditingController();
+  final _nrcController = TextEditingController();
 
   Set<WeekDay> _selectedDays = {WeekDay.monday};
   String _start = '07:00';
@@ -29,6 +30,7 @@ class _CourseOptionFormState extends State<CourseOptionForm> {
     _subjectController.dispose();
     _professorController.dispose();
     _sectionController.dispose();
+    _nrcController.dispose();
     super.dispose();
   }
 
@@ -70,10 +72,21 @@ class _CourseOptionFormState extends State<CourseOptionForm> {
                   const SizedBox(height: 12),
                   TextFormField(
                     controller: _sectionController,
-                    textInputAction: TextInputAction.done,
+                    textInputAction: TextInputAction.next,
                     decoration: const InputDecoration(
                       labelText: 'Sección / grupo',
                       hintText: 'Ej. OO4',
+                      border: OutlineInputBorder(),
+                    ),
+                  ),
+                  const SizedBox(height: 12),
+                  TextFormField(
+                    controller: _nrcController,
+                    keyboardType: TextInputType.number,
+                    textInputAction: TextInputAction.done,
+                    decoration: const InputDecoration(
+                      labelText: 'NRC',
+                      hintText: 'Ej. 24671',
                       border: OutlineInputBorder(),
                     ),
                   ),
@@ -132,6 +145,7 @@ class _CourseOptionFormState extends State<CourseOptionForm> {
           subject: _subjectController.text,
           professor: _professorController.text,
           section: _sectionController.text,
+          nrc: _nrcController.text,
           days: _selectedDays.toList(),
           start: _start,
           end: _end,
@@ -140,6 +154,7 @@ class _CourseOptionFormState extends State<CourseOptionForm> {
     _subjectController.clear();
     _professorController.clear();
     _sectionController.clear();
+    _nrcController.clear();
     setState(() {
       _selectedDays = {WeekDay.monday};
       _start = '07:00';

@@ -4,10 +4,23 @@
     "subject": "Arquitectura de Computadoras",
     "professor": "María Eugenia Sánchez Gálvez",
     "section": "OO1",
+    "nrc": "21928",
     "sessions": [
-      {"day": "monday", "start": "11:00", "end": "12:00"},
-      {"day": "wednesday", "start": "11:00", "end": "13:00"},
-      {"day": "friday", "start": "11:00", "end": "13:00"}
+      {
+        "day": "monday",
+        "start": "11:00",
+        "end": "12:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "11:00",
+        "end": "13:00"
+      },
+      {
+        "day": "friday",
+        "start": "11:00",
+        "end": "13:00"
+      }
     ]
   },
   {
@@ -15,10 +28,23 @@
     "subject": "Arquitectura de Computadoras",
     "professor": "Gustavo Rubin Linares",
     "section": "OO4",
+    "nrc": "22006",
     "sessions": [
-      {"day": "monday", "start": "14:00", "end": "15:00"},
-      {"day": "tuesday", "start": "13:00", "end": "15:00"},
-      {"day": "thursday", "start": "13:00", "end": "15:00"}
+      {
+        "day": "monday",
+        "start": "14:00",
+        "end": "15:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "13:00",
+        "end": "15:00"
+      },
+      {
+        "day": "thursday",
+        "start": "13:00",
+        "end": "15:00"
+      }
     ]
   },
   {
@@ -26,10 +52,23 @@
     "subject": "Arquitectura de Computadoras",
     "professor": "José Miguel Hurtado Madrid",
     "section": "OO5",
+    "nrc": "22041",
     "sessions": [
-      {"day": "monday", "start": "13:00", "end": "14:00"},
-      {"day": "wednesday", "start": "13:00", "end": "15:00"},
-      {"day": "friday", "start": "13:00", "end": "15:00"}
+      {
+        "day": "monday",
+        "start": "13:00",
+        "end": "14:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "13:00",
+        "end": "15:00"
+      },
+      {
+        "day": "friday",
+        "start": "13:00",
+        "end": "15:00"
+      }
     ]
   },
   {
@@ -37,10 +76,23 @@
     "subject": "Arquitectura de Computadoras",
     "professor": "José Fernando Contreras Monsalvo",
     "section": "OO3",
+    "nrc": "22066",
     "sessions": [
-      {"day": "monday", "start": "09:00", "end": "10:00"},
-      {"day": "wednesday", "start": "09:00", "end": "11:00"},
-      {"day": "friday", "start": "09:00", "end": "11:00"}
+      {
+        "day": "monday",
+        "start": "09:00",
+        "end": "10:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "09:00",
+        "end": "11:00"
+      },
+      {
+        "day": "friday",
+        "start": "09:00",
+        "end": "11:00"
+      }
     ]
   },
   {
@@ -48,10 +100,23 @@
     "subject": "Arquitectura de Computadoras",
     "professor": "Gregorio Trinidad García",
     "section": "OO6",
+    "nrc": "22086",
     "sessions": [
-      {"day": "monday", "start": "07:00", "end": "08:00"},
-      {"day": "wednesday", "start": "07:00", "end": "09:00"},
-      {"day": "friday", "start": "07:00", "end": "09:00"}
+      {
+        "day": "monday",
+        "start": "07:00",
+        "end": "08:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "07:00",
+        "end": "09:00"
+      },
+      {
+        "day": "friday",
+        "start": "07:00",
+        "end": "09:00"
+      }
     ]
   },
   {
@@ -59,10 +124,23 @@
     "subject": "Redes Inalámbricas",
     "professor": "Carlos Mauricio Ramírez Espitia",
     "section": "OO1",
+    "nrc": "25676",
     "sessions": [
-      {"day": "monday", "start": "07:00", "end": "08:00"},
-      {"day": "wednesday", "start": "07:00", "end": "09:00"},
-      {"day": "friday", "start": "07:00", "end": "09:00"}
+      {
+        "day": "monday",
+        "start": "07:00",
+        "end": "08:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "07:00",
+        "end": "09:00"
+      },
+      {
+        "day": "friday",
+        "start": "07:00",
+        "end": "09:00"
+      }
     ]
   },
   {
@@ -70,10 +148,23 @@
     "subject": "Redes Inalámbricas",
     "professor": "Mauro Alberto López Muñoz",
     "section": "OO2",
+    "nrc": "25719",
     "sessions": [
-      {"day": "monday", "start": "13:00", "end": "14:00"},
-      {"day": "wednesday", "start": "13:00", "end": "15:00"},
-      {"day": "friday", "start": "13:00", "end": "15:00"}
+      {
+        "day": "monday",
+        "start": "13:00",
+        "end": "14:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "13:00",
+        "end": "15:00"
+      },
+      {
+        "day": "friday",
+        "start": "13:00",
+        "end": "15:00"
+      }
     ]
   },
   {
@@ -81,10 +172,23 @@
     "subject": "Redes Inalámbricas",
     "professor": "Luis Enrique Morales Aguilar",
     "section": "OO3",
+    "nrc": "25745",
     "sessions": [
-      {"day": "monday", "start": "17:00", "end": "18:00"},
-      {"day": "wednesday", "start": "17:00", "end": "19:00"},
-      {"day": "friday", "start": "17:00", "end": "19:00"}
+      {
+        "day": "monday",
+        "start": "17:00",
+        "end": "18:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "17:00",
+        "end": "19:00"
+      },
+      {
+        "day": "friday",
+        "start": "17:00",
+        "end": "19:00"
+      }
     ]
   },
   {
@@ -92,10 +196,23 @@
     "subject": "Redes Inalámbricas",
     "professor": "Guillermo Colorado Jiménez",
     "section": "OO4",
+    "nrc": "25766",
     "sessions": [
-      {"day": "monday", "start": "09:00", "end": "10:00"},
-      {"day": "wednesday", "start": "09:00", "end": "11:00"},
-      {"day": "friday", "start": "09:00", "end": "11:00"}
+      {
+        "day": "monday",
+        "start": "09:00",
+        "end": "10:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "09:00",
+        "end": "11:00"
+      },
+      {
+        "day": "friday",
+        "start": "09:00",
+        "end": "11:00"
+      }
     ]
   },
   {
@@ -103,10 +220,23 @@
     "subject": "Redes Inalámbricas",
     "professor": "Guillermo Colorado Jiménez",
     "section": "OO5",
+    "nrc": "25782",
     "sessions": [
-      {"day": "monday", "start": "10:00", "end": "11:00"},
-      {"day": "tuesday", "start": "09:00", "end": "11:00"},
-      {"day": "thursday", "start": "09:00", "end": "11:00"}
+      {
+        "day": "monday",
+        "start": "10:00",
+        "end": "11:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "09:00",
+        "end": "11:00"
+      },
+      {
+        "day": "thursday",
+        "start": "09:00",
+        "end": "11:00"
+      }
     ]
   },
   {
@@ -114,10 +244,23 @@
     "subject": "Redes Inalámbricas",
     "professor": "Mauro Alberto López Muñoz",
     "section": "OO6",
+    "nrc": "25806",
     "sessions": [
-      {"day": "monday", "start": "14:00", "end": "15:00"},
-      {"day": "tuesday", "start": "13:00", "end": "15:00"},
-      {"day": "thursday", "start": "13:00", "end": "15:00"}
+      {
+        "day": "monday",
+        "start": "14:00",
+        "end": "15:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "13:00",
+        "end": "15:00"
+      },
+      {
+        "day": "thursday",
+        "start": "13:00",
+        "end": "15:00"
+      }
     ]
   },
   {
@@ -125,10 +268,23 @@
     "subject": "Desarrollo de Aplicaciones Web",
     "professor": "Eugenia Erica Vera Cervantes",
     "section": "OO1",
+    "nrc": "24575",
     "sessions": [
-      {"day": "monday", "start": "07:00", "end": "08:00"},
-      {"day": "wednesday", "start": "07:00", "end": "09:00"},
-      {"day": "friday", "start": "07:00", "end": "09:00"}
+      {
+        "day": "monday",
+        "start": "07:00",
+        "end": "08:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "07:00",
+        "end": "09:00"
+      },
+      {
+        "day": "friday",
+        "start": "07:00",
+        "end": "09:00"
+      }
     ]
   },
   {
@@ -136,10 +292,23 @@
     "subject": "Desarrollo de Aplicaciones Web",
     "professor": "Pedro Bello López",
     "section": "OO2",
+    "nrc": "24604",
     "sessions": [
-      {"day": "monday", "start": "17:00", "end": "18:00"},
-      {"day": "wednesday", "start": "17:00", "end": "19:00"},
-      {"day": "friday", "start": "17:00", "end": "19:00"}
+      {
+        "day": "monday",
+        "start": "17:00",
+        "end": "18:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "17:00",
+        "end": "19:00"
+      },
+      {
+        "day": "friday",
+        "start": "17:00",
+        "end": "19:00"
+      }
     ]
   },
   {
@@ -147,10 +316,23 @@
     "subject": "Desarrollo de Aplicaciones Web",
     "professor": "Roberto Elvira Enríquez",
     "section": "OO3",
+    "nrc": "24624",
     "sessions": [
-      {"day": "monday", "start": "16:00", "end": "17:00"},
-      {"day": "tuesday", "start": "15:00", "end": "17:00"},
-      {"day": "thursday", "start": "15:00", "end": "17:00"}
+      {
+        "day": "monday",
+        "start": "16:00",
+        "end": "17:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "15:00",
+        "end": "17:00"
+      },
+      {
+        "day": "thursday",
+        "start": "15:00",
+        "end": "17:00"
+      }
     ]
   },
   {
@@ -158,10 +340,23 @@
     "subject": "Desarrollo de Aplicaciones Web",
     "professor": "Miguel Ángel Vargas Lomelí",
     "section": "OO4",
+    "nrc": "24671",
     "sessions": [
-      {"day": "monday", "start": "09:00", "end": "10:00"},
-      {"day": "wednesday", "start": "09:00", "end": "11:00"},
-      {"day": "friday", "start": "09:00", "end": "11:00"}
+      {
+        "day": "monday",
+        "start": "09:00",
+        "end": "10:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "09:00",
+        "end": "11:00"
+      },
+      {
+        "day": "friday",
+        "start": "09:00",
+        "end": "11:00"
+      }
     ]
   },
   {
@@ -169,10 +364,23 @@
     "subject": "Desarrollo de Aplicaciones Web",
     "professor": "Alfredo Toriz Palacios",
     "section": "OO5",
+    "nrc": "24701",
     "sessions": [
-      {"day": "monday", "start": "10:00", "end": "11:00"},
-      {"day": "tuesday", "start": "09:00", "end": "11:00"},
-      {"day": "thursday", "start": "09:00", "end": "11:00"}
+      {
+        "day": "monday",
+        "start": "10:00",
+        "end": "11:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "09:00",
+        "end": "11:00"
+      },
+      {
+        "day": "thursday",
+        "start": "09:00",
+        "end": "11:00"
+      }
     ]
   },
   {
@@ -180,10 +388,23 @@
     "subject": "Desarrollo de Aplicaciones Web",
     "professor": "Josué Pérez Lucero",
     "section": "OO6",
+    "nrc": "24715",
     "sessions": [
-      {"day": "monday", "start": "13:00", "end": "14:00"},
-      {"day": "wednesday", "start": "13:00", "end": "15:00"},
-      {"day": "friday", "start": "13:00", "end": "15:00"}
+      {
+        "day": "monday",
+        "start": "13:00",
+        "end": "14:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "13:00",
+        "end": "15:00"
+      },
+      {
+        "day": "friday",
+        "start": "13:00",
+        "end": "15:00"
+      }
     ]
   },
   {
@@ -191,10 +412,23 @@
     "subject": "Programación Distribuida Aplicada",
     "professor": "Mariano Larios Gómez",
     "section": "OO1",
+    "nrc": "25756",
     "sessions": [
-      {"day": "monday", "start": "09:00", "end": "10:00"},
-      {"day": "wednesday", "start": "09:00", "end": "11:00"},
-      {"day": "friday", "start": "09:00", "end": "11:00"}
+      {
+        "day": "monday",
+        "start": "09:00",
+        "end": "10:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "09:00",
+        "end": "11:00"
+      },
+      {
+        "day": "friday",
+        "start": "09:00",
+        "end": "11:00"
+      }
     ]
   },
   {
@@ -202,10 +436,23 @@
     "subject": "Programación Distribuida Aplicada",
     "professor": "Alberto Román Flores",
     "section": "OO2",
+    "nrc": "25770",
     "sessions": [
-      {"day": "monday", "start": "13:00", "end": "14:00"},
-      {"day": "wednesday", "start": "13:00", "end": "15:00"},
-      {"day": "friday", "start": "13:00", "end": "15:00"}
+      {
+        "day": "monday",
+        "start": "13:00",
+        "end": "14:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "13:00",
+        "end": "15:00"
+      },
+      {
+        "day": "friday",
+        "start": "13:00",
+        "end": "15:00"
+      }
     ]
   },
   {
@@ -213,10 +460,23 @@
     "subject": "Programación Distribuida Aplicada",
     "professor": "José Martín Orato Ramírez",
     "section": "OO5",
+    "nrc": "25789",
     "sessions": [
-      {"day": "monday", "start": "10:00", "end": "11:00"},
-      {"day": "tuesday", "start": "09:00", "end": "11:00"},
-      {"day": "thursday", "start": "09:00", "end": "11:00"}
+      {
+        "day": "monday",
+        "start": "10:00",
+        "end": "11:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "09:00",
+        "end": "11:00"
+      },
+      {
+        "day": "thursday",
+        "start": "09:00",
+        "end": "11:00"
+      }
     ]
   },
   {
@@ -224,10 +484,23 @@
     "subject": "Programación Distribuida Aplicada",
     "professor": "Darnes Vilariño Ayala",
     "section": "OO6",
+    "nrc": "25794",
     "sessions": [
-      {"day": "monday", "start": "12:00", "end": "13:00"},
-      {"day": "tuesday", "start": "11:00", "end": "13:00"},
-      {"day": "thursday", "start": "11:00", "end": "13:00"}
+      {
+        "day": "monday",
+        "start": "12:00",
+        "end": "13:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "11:00",
+        "end": "13:00"
+      },
+      {
+        "day": "thursday",
+        "start": "11:00",
+        "end": "13:00"
+      }
     ]
   },
   {
@@ -235,10 +508,23 @@
     "subject": "Técnicas de Inteligencia Artificial",
     "professor": "Maya Carrillo Ruiz",
     "section": "OO7",
+    "nrc": "24769",
     "sessions": [
-      {"day": "monday", "start": "15:00", "end": "16:00"},
-      {"day": "wednesday", "start": "15:00", "end": "17:00"},
-      {"day": "friday", "start": "15:00", "end": "17:00"}
+      {
+        "day": "monday",
+        "start": "15:00",
+        "end": "16:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "15:00",
+        "end": "17:00"
+      },
+      {
+        "day": "friday",
+        "start": "15:00",
+        "end": "17:00"
+      }
     ]
   },
   {
@@ -246,10 +532,23 @@
     "subject": "Técnicas de Inteligencia Artificial",
     "professor": "Luis René Marcial Castillo",
     "section": "OO5",
+    "nrc": "24791",
     "sessions": [
-      {"day": "monday", "start": "11:00", "end": "12:00"},
-      {"day": "wednesday", "start": "11:00", "end": "13:00"},
-      {"day": "friday", "start": "11:00", "end": "13:00"}
+      {
+        "day": "monday",
+        "start": "11:00",
+        "end": "12:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "11:00",
+        "end": "13:00"
+      },
+      {
+        "day": "friday",
+        "start": "11:00",
+        "end": "13:00"
+      }
     ]
   },
   {
@@ -257,10 +556,23 @@
     "subject": "Técnicas de Inteligencia Artificial",
     "professor": "Luis Carlos Altamirano Robles",
     "section": "OO4",
+    "nrc": "24824",
     "sessions": [
-      {"day": "monday", "start": "13:00", "end": "14:00"},
-      {"day": "wednesday", "start": "13:00", "end": "15:00"},
-      {"day": "friday", "start": "13:00", "end": "15:00"}
+      {
+        "day": "monday",
+        "start": "13:00",
+        "end": "14:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "13:00",
+        "end": "15:00"
+      },
+      {
+        "day": "friday",
+        "start": "13:00",
+        "end": "15:00"
+      }
     ]
   },
   {
@@ -268,10 +580,23 @@
     "subject": "Técnicas de Inteligencia Artificial",
     "professor": "Marcela Rivera Martínez",
     "section": "OO3",
+    "nrc": "24842",
     "sessions": [
-      {"day": "monday", "start": "07:00", "end": "08:00"},
-      {"day": "wednesday", "start": "07:00", "end": "09:00"},
-      {"day": "friday", "start": "07:00", "end": "09:00"}
+      {
+        "day": "monday",
+        "start": "07:00",
+        "end": "08:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "07:00",
+        "end": "09:00"
+      },
+      {
+        "day": "friday",
+        "start": "07:00",
+        "end": "09:00"
+      }
     ]
   },
   {
@@ -279,10 +604,23 @@
     "subject": "Técnicas de Inteligencia Artificial",
     "professor": "Marcela Rivera Martínez",
     "section": "OO2",
+    "nrc": "24859",
     "sessions": [
-      {"day": "monday", "start": "12:00", "end": "13:00"},
-      {"day": "tuesday", "start": "11:00", "end": "13:00"},
-      {"day": "thursday", "start": "11:00", "end": "13:00"}
+      {
+        "day": "monday",
+        "start": "12:00",
+        "end": "13:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "11:00",
+        "end": "13:00"
+      },
+      {
+        "day": "thursday",
+        "start": "11:00",
+        "end": "13:00"
+      }
     ]
   },
   {
@@ -290,10 +628,23 @@
     "subject": "Técnicas de Inteligencia Artificial",
     "professor": "Abraham Sánchez López",
     "section": "OO1",
+    "nrc": "25723",
     "sessions": [
-      {"day": "monday", "start": "07:00", "end": "08:00"},
-      {"day": "wednesday", "start": "07:00", "end": "09:00"},
-      {"day": "friday", "start": "07:00", "end": "09:00"}
+      {
+        "day": "monday",
+        "start": "07:00",
+        "end": "08:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "07:00",
+        "end": "09:00"
+      },
+      {
+        "day": "friday",
+        "start": "07:00",
+        "end": "09:00"
+      }
     ]
   },
   {
@@ -301,10 +652,23 @@
     "subject": "Técnicas de Inteligencia Artificial",
     "professor": "Iván Olmos Pineda",
     "section": "OO8",
+    "nrc": "34048",
     "sessions": [
-      {"day": "monday", "start": "09:00", "end": "10:00"},
-      {"day": "wednesday", "start": "09:00", "end": "11:00"},
-      {"day": "friday", "start": "09:00", "end": "11:00"}
+      {
+        "day": "monday",
+        "start": "09:00",
+        "end": "10:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "09:00",
+        "end": "11:00"
+      },
+      {
+        "day": "friday",
+        "start": "09:00",
+        "end": "11:00"
+      }
     ]
   },
   {
@@ -312,10 +676,23 @@
     "subject": "Teoría de Control",
     "professor": "Gustavo Rubin Linares",
     "section": "OO5",
+    "nrc": "24659",
     "sessions": [
-      {"day": "monday", "start": "13:00", "end": "14:00"},
-      {"day": "wednesday", "start": "13:00", "end": "15:00"},
-      {"day": "friday", "start": "13:00", "end": "15:00"}
+      {
+        "day": "monday",
+        "start": "13:00",
+        "end": "14:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "13:00",
+        "end": "15:00"
+      },
+      {
+        "day": "friday",
+        "start": "13:00",
+        "end": "15:00"
+      }
     ]
   },
   {
@@ -323,10 +700,23 @@
     "subject": "Teoría de Control",
     "professor": "Gregorio Trinidad García",
     "section": "OO4",
+    "nrc": "24709",
     "sessions": [
-      {"day": "monday", "start": "09:00", "end": "10:00"},
-      {"day": "wednesday", "start": "09:00", "end": "11:00"},
-      {"day": "friday", "start": "09:00", "end": "11:00"}
+      {
+        "day": "monday",
+        "start": "09:00",
+        "end": "10:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "09:00",
+        "end": "11:00"
+      },
+      {
+        "day": "friday",
+        "start": "09:00",
+        "end": "11:00"
+      }
     ]
   },
   {
@@ -334,10 +724,23 @@
     "subject": "Teoría de Control",
     "professor": "Abraham Maldonado García",
     "section": "OO2",
+    "nrc": "24739",
     "sessions": [
-      {"day": "monday", "start": "15:00", "end": "16:00"},
-      {"day": "wednesday", "start": "15:00", "end": "17:00"},
-      {"day": "friday", "start": "15:00", "end": "17:00"}
+      {
+        "day": "monday",
+        "start": "15:00",
+        "end": "16:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "15:00",
+        "end": "17:00"
+      },
+      {
+        "day": "friday",
+        "start": "15:00",
+        "end": "17:00"
+      }
     ]
   },
   {
@@ -345,10 +748,23 @@
     "subject": "Teoría de Control",
     "professor": "María Eugenia Sánchez Gálvez",
     "section": "OO1",
+    "nrc": "24749",
     "sessions": [
-      {"day": "monday", "start": "12:00", "end": "13:00"},
-      {"day": "tuesday", "start": "11:00", "end": "13:00"},
-      {"day": "thursday", "start": "11:00", "end": "13:00"}
+      {
+        "day": "monday",
+        "start": "12:00",
+        "end": "13:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "11:00",
+        "end": "13:00"
+      },
+      {
+        "day": "thursday",
+        "start": "11:00",
+        "end": "13:00"
+      }
     ]
   }
 ]
