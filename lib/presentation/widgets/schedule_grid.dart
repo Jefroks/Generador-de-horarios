@@ -38,8 +38,8 @@ class _ScheduleGridState extends State<ScheduleGrid> {
         final isMobile = AppBreakpoints.isMobile(constraints.maxWidth);
         final isTablet = AppBreakpoints.isTablet(constraints.maxWidth);
 
-        final hourHeight = isMobile ? 72.0 : 64.0;
-        final timeColumnWidth = isMobile ? 56.0 : 72.0;
+        final hourHeight = isMobile ? 74.0 : (isTablet ? 72.0 : 82.0);
+        final timeColumnWidth = isMobile ? 56.0 : 78.0;
         final minDayWidth = isMobile ? 112.0 : (isTablet ? 148.0 : 190.0);
         final availableDayWidth = (constraints.maxWidth - timeColumnWidth) / WeekDay.values.length;
         final dayColumnWidth = math.max(minDayWidth, availableDayWidth);
@@ -117,7 +117,7 @@ class _HeaderRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: compact ? 42 : 48,
+      height: compact ? 44 : 56,
       decoration: BoxDecoration(
         border: Border(bottom: BorderSide(color: Theme.of(context).dividerColor)),
       ),
@@ -128,7 +128,9 @@ class _HeaderRow extends StatelessWidget {
             child: Center(
               child: Text(
                 'Hora',
-                style: Theme.of(context).textTheme.labelSmall,
+                style: Theme.of(context).textTheme.labelMedium?.copyWith(
+                      fontWeight: FontWeight.w700,
+                    ),
               ),
             ),
           ),
@@ -141,9 +143,10 @@ class _HeaderRow extends StatelessWidget {
               ),
               child: Text(
                 compact ? day.shortLabel : day.label,
-                style: compact
-                    ? Theme.of(context).textTheme.labelLarge
-                    : Theme.of(context).textTheme.titleSmall,
+                style: (compact
+                        ? Theme.of(context).textTheme.labelLarge
+                        : Theme.of(context).textTheme.titleMedium)
+                    ?.copyWith(fontWeight: FontWeight.w700),
               ),
             ),
           ),
@@ -180,7 +183,10 @@ class _TimeColumn extends StatelessWidget {
             ),
             child: Text(
               '${hour.toString().padLeft(2, '0')}:00',
-              style: compact ? Theme.of(context).textTheme.labelSmall : null,
+              style: (compact
+                  ? Theme.of(context).textTheme.labelSmall
+                  : Theme.of(context).textTheme.labelLarge)
+              ?.copyWith(fontWeight: FontWeight.w600),
             ),
           );
         }),
@@ -283,43 +289,75 @@ class _ClassBlock extends StatelessWidget {
         border: Border.all(color: color, width: 1.2),
         borderRadius: BorderRadius.circular(compact ? 10 : 12),
       ),
-      child: FittedBox(
-        alignment: Alignment.topLeft,
-        fit: BoxFit.scaleDown,
-        child: SizedBox(
-          width: compact ? 96 : 150,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Text(
-                visualClass.option.subject,
-                maxLines: compact ? 1 : 2,
-                overflow: TextOverflow.ellipsis,
-                style: compact
-                    ? Theme.of(context).textTheme.labelMedium
-                    : Theme.of(context).textTheme.labelLarge,
+      child: LayoutBuilder(
+        builder: (context, constraints) {
+          final availableWidth = constraints.maxWidth.isFinite
+              ? constraints.maxWidth
+              : (compact ? 96.0 : 180.0);
+          final availableHeight = constraints.maxHeight.isFinite
+              ? constraints.maxHeight
+              : (compact ? 48.0 : 64.0);
+          final spacious = !compact && availableWidth >= 180;
+          final subjectSize = compact ? 14.5 : (spacious ? 19.0 : 17.0);
+          final professorSize = compact ? 12.8 : (spacious ? 15.5 : 14.0);
+          final detailSize = compact ? 12.4 : (spacious ? 14.5 : 13.2);
+          final showProfessor = availableHeight >= (compact ? 36 : 42);
+          final showSection = !compact && availableHeight >= 76;
+
+          return FittedBox(
+            alignment: Alignment.topLeft,
+            fit: BoxFit.scaleDown,
+            child: SizedBox(
+              width: availableWidth,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Text(
+                    visualClass.option.subject,
+                    maxLines: compact ? 1 : 2,
+                    overflow: TextOverflow.ellipsis,
+                    style: TextStyle(
+                      fontSize: subjectSize,
+                      fontWeight: FontWeight.w800,
+                      height: 1.05,
+                    ),
+                  ),
+                  if (showProfessor)
+                    Text(
+                      visualClass.option.professor,
+                      maxLines: compact ? 1 : 2,
+                      overflow: TextOverflow.ellipsis,
+                      style: TextStyle(
+                        fontSize: professorSize,
+                        fontWeight: FontWeight.w600,
+                        height: 1.05,
+                      ),
+                    ),
+                  Text(
+                    '${visualClass.sessionStart}-${visualClass.sessionEnd}',
+                    style: TextStyle(
+                      fontSize: detailSize,
+                      fontWeight: FontWeight.w600,
+                      height: 1.05,
+                    ),
+                  ),
+                  if (showSection)
+                    Text(
+                      visualClass.option.section,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: TextStyle(
+                        fontSize: detailSize,
+                        fontWeight: FontWeight.w600,
+                        height: 1.05,
+                      ),
+                    ),
+                ],
               ),
-              Text(
-                visualClass.option.professor,
-                maxLines: compact ? 1 : 2,
-                overflow: TextOverflow.ellipsis,
-                style: Theme.of(context).textTheme.bodySmall,
-              ),
-              Text(
-                '${visualClass.sessionStart}-${visualClass.sessionEnd}',
-                style: Theme.of(context).textTheme.bodySmall,
-              ),
-              if (!compact)
-                Text(
-                  visualClass.option.section,
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
-                  style: Theme.of(context).textTheme.bodySmall,
-                ),
-            ],
-          ),
-        ),
+            ),
+          );
+        },
       ),
     );
   }

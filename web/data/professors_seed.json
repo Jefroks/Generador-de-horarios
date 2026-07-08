@@ -5,9 +5,21 @@
     "professor": "María Eugenia Sánchez Gálvez",
     "section": "OO1",
     "sessions": [
-      {"day": "monday", "start": "11:00", "end": "12:00"},
-      {"day": "wednesday", "start": "11:00", "end": "13:00"},
-      {"day": "friday", "start": "11:00", "end": "13:00"}
+      {
+        "day": "monday",
+        "start": "11:00",
+        "end": "12:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "11:00",
+        "end": "13:00"
+      },
+      {
+        "day": "friday",
+        "start": "11:00",
+        "end": "13:00"
+      }
     ]
   },
   {
@@ -16,9 +28,67 @@
     "professor": "Gustavo Rubin Linares",
     "section": "OO4",
     "sessions": [
-      {"day": "monday", "start": "14:00", "end": "15:00"},
-      {"day": "tuesday", "start": "13:00", "end": "15:00"},
-      {"day": "thursday", "start": "13:00", "end": "15:00"}
+      {
+        "day": "monday",
+        "start": "14:00",
+        "end": "15:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "13:00",
+        "end": "15:00"
+      },
+      {
+        "day": "thursday",
+        "start": "13:00",
+        "end": "15:00"
+      }
+    ]
+  },
+  {
+    "id": "arq-oo5-hurtado",
+    "subject": "Arquitectura de Computadoras",
+    "professor": "José Miguel Hurtado Madrid",
+    "section": "OO5",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "13:00",
+        "end": "14:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "13:00",
+        "end": "15:00"
+      },
+      {
+        "day": "friday",
+        "start": "13:00",
+        "end": "15:00"
+      }
+    ]
+  },
+  {
+    "id": "arq-oo3-contreras",
+    "subject": "Arquitectura de Computadoras",
+    "professor": "José Fernando Contreras Monsalvo",
+    "section": "OO3",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "09:00",
+        "end": "10:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "09:00",
+        "end": "11:00"
+      },
+      {
+        "day": "friday",
+        "start": "09:00",
+        "end": "11:00"
+      }
     ]
   },
   {
@@ -27,9 +97,67 @@
     "professor": "Gregorio Trinidad García",
     "section": "OO6",
     "sessions": [
-      {"day": "monday", "start": "07:00", "end": "08:00"},
-      {"day": "wednesday", "start": "07:00", "end": "09:00"},
-      {"day": "friday", "start": "07:00", "end": "09:00"}
+      {
+        "day": "monday",
+        "start": "07:00",
+        "end": "08:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "07:00",
+        "end": "09:00"
+      },
+      {
+        "day": "friday",
+        "start": "07:00",
+        "end": "09:00"
+      }
+    ]
+  },
+  {
+    "id": "red-oo1-ramirez",
+    "subject": "Redes Inalámbricas",
+    "professor": "Carlos Mauricio Ramírez Espitia",
+    "section": "OO1",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "07:00",
+        "end": "08:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "07:00",
+        "end": "09:00"
+      },
+      {
+        "day": "friday",
+        "start": "07:00",
+        "end": "09:00"
+      }
+    ]
+  },
+  {
+    "id": "red-oo2-mauro",
+    "subject": "Redes Inalámbricas",
+    "professor": "Mauro Alberto López Muñoz",
+    "section": "OO2",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "13:00",
+        "end": "14:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "13:00",
+        "end": "15:00"
+      },
+      {
+        "day": "friday",
+        "start": "13:00",
+        "end": "15:00"
+      }
     ]
   },
   {
@@ -38,9 +166,90 @@
     "professor": "Luis Enrique Morales Aguilar",
     "section": "OO3",
     "sessions": [
-      {"day": "monday", "start": "17:00", "end": "18:00"},
-      {"day": "wednesday", "start": "17:00", "end": "19:00"},
-      {"day": "friday", "start": "17:00", "end": "19:00"}
+      {
+        "day": "monday",
+        "start": "17:00",
+        "end": "18:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "17:00",
+        "end": "19:00"
+      },
+      {
+        "day": "friday",
+        "start": "17:00",
+        "end": "19:00"
+      }
+    ]
+  },
+  {
+    "id": "red-oo4-colorado",
+    "subject": "Redes Inalámbricas",
+    "professor": "Guillermo Colorado Jiménez",
+    "section": "OO4",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "09:00",
+        "end": "10:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "09:00",
+        "end": "11:00"
+      },
+      {
+        "day": "friday",
+        "start": "09:00",
+        "end": "11:00"
+      }
+    ]
+  },
+  {
+    "id": "red-oo5-colorado",
+    "subject": "Redes Inalámbricas",
+    "professor": "Guillermo Colorado Jiménez",
+    "section": "OO5",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "10:00",
+        "end": "11:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "09:00",
+        "end": "11:00"
+      },
+      {
+        "day": "thursday",
+        "start": "09:00",
+        "end": "11:00"
+      }
+    ]
+  },
+  {
+    "id": "red-oo6-mauro",
+    "subject": "Redes Inalámbricas",
+    "professor": "Mauro Alberto López Muñoz",
+    "section": "OO6",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "14:00",
+        "end": "15:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "13:00",
+        "end": "15:00"
+      },
+      {
+        "day": "thursday",
+        "start": "13:00",
+        "end": "15:00"
+      }
     ]
   },
   {
@@ -49,9 +258,67 @@
     "professor": "Eugenia Erica Vera Cervantes",
     "section": "OO1",
     "sessions": [
-      {"day": "monday", "start": "07:00", "end": "08:00"},
-      {"day": "wednesday", "start": "07:00", "end": "09:00"},
-      {"day": "friday", "start": "07:00", "end": "09:00"}
+      {
+        "day": "monday",
+        "start": "07:00",
+        "end": "08:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "07:00",
+        "end": "09:00"
+      },
+      {
+        "day": "friday",
+        "start": "07:00",
+        "end": "09:00"
+      }
+    ]
+  },
+  {
+    "id": "web-oo2-bello",
+    "subject": "Desarrollo de Aplicaciones Web",
+    "professor": "Pedro Bello López",
+    "section": "OO2",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "17:00",
+        "end": "18:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "17:00",
+        "end": "19:00"
+      },
+      {
+        "day": "friday",
+        "start": "17:00",
+        "end": "19:00"
+      }
+    ]
+  },
+  {
+    "id": "web-oo3-elvira",
+    "subject": "Desarrollo de Aplicaciones Web",
+    "professor": "Roberto Elvira Enríquez",
+    "section": "OO3",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "16:00",
+        "end": "17:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "15:00",
+        "end": "17:00"
+      },
+      {
+        "day": "thursday",
+        "start": "15:00",
+        "end": "17:00"
+      }
     ]
   },
   {
@@ -60,9 +327,67 @@
     "professor": "Miguel Ángel Vargas Lomelí",
     "section": "OO4",
     "sessions": [
-      {"day": "monday", "start": "09:00", "end": "10:00"},
-      {"day": "wednesday", "start": "09:00", "end": "11:00"},
-      {"day": "friday", "start": "09:00", "end": "11:00"}
+      {
+        "day": "monday",
+        "start": "09:00",
+        "end": "10:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "09:00",
+        "end": "11:00"
+      },
+      {
+        "day": "friday",
+        "start": "09:00",
+        "end": "11:00"
+      }
+    ]
+  },
+  {
+    "id": "web-oo5-toriz",
+    "subject": "Desarrollo de Aplicaciones Web",
+    "professor": "Alfredo Toriz Palacios",
+    "section": "OO5",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "10:00",
+        "end": "11:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "09:00",
+        "end": "11:00"
+      },
+      {
+        "day": "thursday",
+        "start": "09:00",
+        "end": "11:00"
+      }
+    ]
+  },
+  {
+    "id": "web-oo6-josue",
+    "subject": "Desarrollo de Aplicaciones Web",
+    "professor": "Josué Pérez Lucero",
+    "section": "OO6",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "13:00",
+        "end": "14:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "13:00",
+        "end": "15:00"
+      },
+      {
+        "day": "friday",
+        "start": "13:00",
+        "end": "15:00"
+      }
     ]
   },
   {
@@ -71,9 +396,21 @@
     "professor": "Mariano Larios Gómez",
     "section": "OO1",
     "sessions": [
-      {"day": "monday", "start": "09:00", "end": "10:00"},
-      {"day": "wednesday", "start": "09:00", "end": "11:00"},
-      {"day": "friday", "start": "09:00", "end": "11:00"}
+      {
+        "day": "monday",
+        "start": "09:00",
+        "end": "10:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "09:00",
+        "end": "11:00"
+      },
+      {
+        "day": "friday",
+        "start": "09:00",
+        "end": "11:00"
+      }
     ]
   },
   {
@@ -82,9 +419,67 @@
     "professor": "Alberto Román Flores",
     "section": "OO2",
     "sessions": [
-      {"day": "monday", "start": "13:00", "end": "14:00"},
-      {"day": "wednesday", "start": "13:00", "end": "15:00"},
-      {"day": "friday", "start": "13:00", "end": "15:00"}
+      {
+        "day": "monday",
+        "start": "13:00",
+        "end": "14:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "13:00",
+        "end": "15:00"
+      },
+      {
+        "day": "friday",
+        "start": "13:00",
+        "end": "15:00"
+      }
+    ]
+  },
+  {
+    "id": "dist-oo5-orato",
+    "subject": "Programación Distribuida Aplicada",
+    "professor": "José Martín Orato Ramírez",
+    "section": "OO5",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "10:00",
+        "end": "11:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "09:00",
+        "end": "11:00"
+      },
+      {
+        "day": "thursday",
+        "start": "09:00",
+        "end": "11:00"
+      }
+    ]
+  },
+  {
+    "id": "dist-oo6-vilarino",
+    "subject": "Programación Distribuida Aplicada",
+    "professor": "Darnes Vilariño Ayala",
+    "section": "OO6",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "12:00",
+        "end": "13:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "11:00",
+        "end": "13:00"
+      },
+      {
+        "day": "thursday",
+        "start": "11:00",
+        "end": "13:00"
+      }
     ]
   },
   {
@@ -93,9 +488,21 @@
     "professor": "Maya Carrillo Ruiz",
     "section": "OO7",
     "sessions": [
-      {"day": "monday", "start": "15:00", "end": "16:00"},
-      {"day": "wednesday", "start": "15:00", "end": "17:00"},
-      {"day": "friday", "start": "15:00", "end": "17:00"}
+      {
+        "day": "monday",
+        "start": "15:00",
+        "end": "16:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "15:00",
+        "end": "17:00"
+      },
+      {
+        "day": "friday",
+        "start": "15:00",
+        "end": "17:00"
+      }
     ]
   },
   {
@@ -104,9 +511,21 @@
     "professor": "Luis René Marcial Castillo",
     "section": "OO5",
     "sessions": [
-      {"day": "monday", "start": "11:00", "end": "12:00"},
-      {"day": "wednesday", "start": "11:00", "end": "13:00"},
-      {"day": "friday", "start": "11:00", "end": "13:00"}
+      {
+        "day": "monday",
+        "start": "11:00",
+        "end": "12:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "11:00",
+        "end": "13:00"
+      },
+      {
+        "day": "friday",
+        "start": "11:00",
+        "end": "13:00"
+      }
     ]
   },
   {
@@ -115,9 +534,21 @@
     "professor": "Luis Carlos Altamirano Robles",
     "section": "OO4",
     "sessions": [
-      {"day": "monday", "start": "13:00", "end": "14:00"},
-      {"day": "wednesday", "start": "13:00", "end": "15:00"},
-      {"day": "friday", "start": "13:00", "end": "15:00"}
+      {
+        "day": "monday",
+        "start": "13:00",
+        "end": "14:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "13:00",
+        "end": "15:00"
+      },
+      {
+        "day": "friday",
+        "start": "13:00",
+        "end": "15:00"
+      }
     ]
   },
   {
@@ -126,9 +557,21 @@
     "professor": "Marcela Rivera Martínez",
     "section": "OO3",
     "sessions": [
-      {"day": "monday", "start": "07:00", "end": "08:00"},
-      {"day": "wednesday", "start": "07:00", "end": "09:00"},
-      {"day": "friday", "start": "07:00", "end": "09:00"}
+      {
+        "day": "monday",
+        "start": "07:00",
+        "end": "08:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "07:00",
+        "end": "09:00"
+      },
+      {
+        "day": "friday",
+        "start": "07:00",
+        "end": "09:00"
+      }
     ]
   },
   {
@@ -137,9 +580,21 @@
     "professor": "Marcela Rivera Martínez",
     "section": "OO2",
     "sessions": [
-      {"day": "monday", "start": "12:00", "end": "13:00"},
-      {"day": "tuesday", "start": "11:00", "end": "13:00"},
-      {"day": "thursday", "start": "11:00", "end": "13:00"}
+      {
+        "day": "monday",
+        "start": "12:00",
+        "end": "13:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "11:00",
+        "end": "13:00"
+      },
+      {
+        "day": "thursday",
+        "start": "11:00",
+        "end": "13:00"
+      }
     ]
   },
   {
@@ -148,9 +603,21 @@
     "professor": "Abraham Sánchez López",
     "section": "OO1",
     "sessions": [
-      {"day": "monday", "start": "07:00", "end": "08:00"},
-      {"day": "wednesday", "start": "07:00", "end": "09:00"},
-      {"day": "friday", "start": "07:00", "end": "09:00"}
+      {
+        "day": "monday",
+        "start": "07:00",
+        "end": "08:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "07:00",
+        "end": "09:00"
+      },
+      {
+        "day": "friday",
+        "start": "07:00",
+        "end": "09:00"
+      }
     ]
   },
   {
@@ -159,9 +626,21 @@
     "professor": "Iván Olmos Pineda",
     "section": "OO8",
     "sessions": [
-      {"day": "monday", "start": "09:00", "end": "10:00"},
-      {"day": "wednesday", "start": "09:00", "end": "11:00"},
-      {"day": "friday", "start": "09:00", "end": "11:00"}
+      {
+        "day": "monday",
+        "start": "09:00",
+        "end": "10:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "09:00",
+        "end": "11:00"
+      },
+      {
+        "day": "friday",
+        "start": "09:00",
+        "end": "11:00"
+      }
     ]
   },
   {
@@ -170,9 +649,21 @@
     "professor": "Gustavo Rubin Linares",
     "section": "OO5",
     "sessions": [
-      {"day": "monday", "start": "13:00", "end": "14:00"},
-      {"day": "wednesday", "start": "13:00", "end": "15:00"},
-      {"day": "friday", "start": "13:00", "end": "15:00"}
+      {
+        "day": "monday",
+        "start": "13:00",
+        "end": "14:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "13:00",
+        "end": "15:00"
+      },
+      {
+        "day": "friday",
+        "start": "13:00",
+        "end": "15:00"
+      }
     ]
   },
   {
@@ -181,9 +672,21 @@
     "professor": "Gregorio Trinidad García",
     "section": "OO4",
     "sessions": [
-      {"day": "monday", "start": "09:00", "end": "10:00"},
-      {"day": "wednesday", "start": "09:00", "end": "11:00"},
-      {"day": "friday", "start": "09:00", "end": "11:00"}
+      {
+        "day": "monday",
+        "start": "09:00",
+        "end": "10:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "09:00",
+        "end": "11:00"
+      },
+      {
+        "day": "friday",
+        "start": "09:00",
+        "end": "11:00"
+      }
     ]
   },
   {
@@ -192,9 +695,21 @@
     "professor": "Abraham Maldonado García",
     "section": "OO2",
     "sessions": [
-      {"day": "monday", "start": "15:00", "end": "16:00"},
-      {"day": "wednesday", "start": "15:00", "end": "17:00"},
-      {"day": "friday", "start": "15:00", "end": "17:00"}
+      {
+        "day": "monday",
+        "start": "15:00",
+        "end": "16:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "15:00",
+        "end": "17:00"
+      },
+      {
+        "day": "friday",
+        "start": "15:00",
+        "end": "17:00"
+      }
     ]
   },
   {
@@ -203,1517 +718,1529 @@
     "professor": "María Eugenia Sánchez Gálvez",
     "section": "OO1",
     "sessions": [
-      {"day": "monday", "start": "12:00", "end": "13:00"},
-      {"day": "tuesday", "start": "11:00", "end": "13:00"},
-      {"day": "thursday", "start": "11:00", "end": "13:00"}
+      {
+        "day": "monday",
+        "start": "12:00",
+        "end": "13:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "11:00",
+        "end": "13:00"
+      },
+      {
+        "day": "thursday",
+        "start": "11:00",
+        "end": "13:00"
+      }
     ]
   },
   {
-      "id": "laes250-oo1-diaz-perez",
-      "subject": "Administración Estratégica",
-      "professor": "Ricardo Díaz Pérez",
-      "section": "OO1",
-      "sessions": [
-        {
-          "day": "monday",
-          "start": "19:00",
-          "end": "20:00"
-        },
-        {
-          "day": "tuesday",
-          "start": "19:00",
-          "end": "20:00"
-        },
-        {
-          "day": "wednesday",
-          "start": "19:00",
-          "end": "20:00"
-        },
-        {
-          "day": "thursday",
-          "start": "19:00",
-          "end": "20:00"
-        }
-      ]
-    },
-    {
-      "id": "laes250-oo2-mora-villegas",
-      "subject": "Administración Estratégica",
-      "professor": "María Dimpna Mora Villegas",
-      "section": "OO2",
-      "sessions": [
-        {
-          "day": "monday",
-          "start": "10:00",
-          "end": "11:00"
-        },
-        {
-          "day": "tuesday",
-          "start": "10:00",
-          "end": "11:00"
-        },
-        {
-          "day": "wednesday",
-          "start": "10:00",
-          "end": "11:00"
-        },
-        {
-          "day": "thursday",
-          "start": "10:00",
-          "end": "11:00"
-        }
-      ]
-    },
-    {
-      "id": "laes250-oo3-aceves-cabrera",
-      "subject": "Administración Estratégica",
-      "professor": "Luis Fernando Aceves Cabrera",
-      "section": "OO3",
-      "sessions": [
-        {
-          "day": "monday",
-          "start": "12:00",
-          "end": "13:00"
-        },
-        {
-          "day": "tuesday",
-          "start": "12:00",
-          "end": "13:00"
-        },
-        {
-          "day": "wednesday",
-          "start": "12:00",
-          "end": "13:00"
-        },
-        {
-          "day": "thursday",
-          "start": "12:00",
-          "end": "13:00"
-        }
-      ]
-    },
-    {
-      "id": "laes250-oo4-torres-soto",
-      "subject": "Administración Estratégica",
-      "professor": "María Rocío Torres Soto",
-      "section": "OO4",
-      "sessions": [
-        {
-          "day": "monday",
-          "start": "11:00",
-          "end": "12:00"
-        },
-        {
-          "day": "tuesday",
-          "start": "11:00",
-          "end": "12:00"
-        },
-        {
-          "day": "wednesday",
-          "start": "11:00",
-          "end": "12:00"
-        },
-        {
-          "day": "thursday",
-          "start": "11:00",
-          "end": "12:00"
-        }
-      ]
-    },
-    {
-      "id": "laes250-oo5-aceves-cabrera",
-      "subject": "Administración Estratégica",
-      "professor": "Luis Fernando Aceves Cabrera",
-      "section": "OO5",
-      "sessions": [
-        {
-          "day": "monday",
-          "start": "13:00",
-          "end": "14:00"
-        },
-        {
-          "day": "tuesday",
-          "start": "13:00",
-          "end": "14:00"
-        },
-        {
-          "day": "wednesday",
-          "start": "13:00",
-          "end": "14:00"
-        },
-        {
-          "day": "thursday",
-          "start": "13:00",
-          "end": "14:00"
-        }
-      ]
-    },
-    {
-      "id": "laes258-oo1-vazquez-sanchez",
-      "subject": "Administración de Procesos Productivos",
-      "professor": "Rosa Adriana Vázquez Sánchez",
-      "section": "OO1",
-      "sessions": [
-        {
-          "day": "monday",
-          "start": "15:00",
-          "end": "16:00"
-        },
-        {
-          "day": "tuesday",
-          "start": "15:00",
-          "end": "16:00"
-        },
-        {
-          "day": "wednesday",
-          "start": "15:00",
-          "end": "16:00"
-        },
-        {
-          "day": "thursday",
-          "start": "15:00",
-          "end": "16:00"
-        }
-      ]
-    },
-    {
-      "id": "laes258-oo2-lara-vicuna",
-      "subject": "Administración de Procesos Productivos",
-      "professor": "Alejandro Pérez Lara Vicuña",
-      "section": "OO2",
-      "sessions": [
-        {
-          "day": "monday",
-          "start": "16:00",
-          "end": "17:00"
-        },
-        {
-          "day": "tuesday",
-          "start": "16:00",
-          "end": "17:00"
-        },
-        {
-          "day": "wednesday",
-          "start": "16:00",
-          "end": "17:00"
-        },
-        {
-          "day": "thursday",
-          "start": "16:00",
-          "end": "17:00"
-        }
-      ]
-    },
-    {
-      "id": "laes258-oo3-palacios-polo",
-      "subject": "Administración de Procesos Productivos",
-      "professor": "María del Pilar Guadalupe Palacios Polo",
-      "section": "OO3",
-      "sessions": [
-        {
-          "day": "monday",
-          "start": "07:00",
-          "end": "08:00"
-        },
-        {
-          "day": "tuesday",
-          "start": "07:00",
-          "end": "08:00"
-        },
-        {
-          "day": "wednesday",
-          "start": "07:00",
-          "end": "08:00"
-        },
-        {
-          "day": "thursday",
-          "start": "07:00",
-          "end": "08:00"
-        }
-      ]
-    },
-    {
-      "id": "laes258-oo4-palacios-polo",
-      "subject": "Administración de Procesos Productivos",
-      "professor": "María del Pilar Guadalupe Palacios Polo",
-      "section": "OO4",
-      "sessions": [
-        {
-          "day": "monday",
-          "start": "08:00",
-          "end": "09:00"
-        },
-        {
-          "day": "tuesday",
-          "start": "08:00",
-          "end": "09:00"
-        },
-        {
-          "day": "wednesday",
-          "start": "08:00",
-          "end": "09:00"
-        },
-        {
-          "day": "thursday",
-          "start": "08:00",
-          "end": "09:00"
-        }
-      ]
-    },
-    {
-      "id": "laes258-oo5-palacios-polo",
-      "subject": "Administración de Procesos Productivos",
-      "professor": "María del Pilar Guadalupe Palacios Polo",
-      "section": "OO5",
-      "sessions": [
-        {
-          "day": "monday",
-          "start": "09:00",
-          "end": "10:00"
-        },
-        {
-          "day": "tuesday",
-          "start": "09:00",
-          "end": "10:00"
-        },
-        {
-          "day": "wednesday",
-          "start": "09:00",
-          "end": "10:00"
-        },
-        {
-          "day": "thursday",
-          "start": "09:00",
-          "end": "10:00"
-        }
-      ]
-    },
-    {
-      "id": "laes258-oo6-martinez-leon",
-      "subject": "Administración de Procesos Productivos",
-      "professor": "Rosario Martínez León",
-      "section": "OO6",
-      "sessions": [
-        {
-          "day": "monday",
-          "start": "17:00",
-          "end": "18:00"
-        },
-        {
-          "day": "tuesday",
-          "start": "17:00",
-          "end": "18:00"
-        },
-        {
-          "day": "wednesday",
-          "start": "17:00",
-          "end": "18:00"
-        },
-        {
-          "day": "thursday",
-          "start": "17:00",
-          "end": "18:00"
-        }
-      ]
-    },
-    {
-      "id": "laes256-oo1-toxqui-mendoza",
-      "subject": "Gestión y Desarrollo del Capital Humano",
-      "professor": "Marco Tulio Toxqui Mendoza",
-      "section": "OO1",
-      "sessions": [
-        {
-          "day": "monday",
-          "start": "09:00",
-          "end": "10:00"
-        },
-        {
-          "day": "tuesday",
-          "start": "09:00",
-          "end": "10:00"
-        },
-        {
-          "day": "wednesday",
-          "start": "09:00",
-          "end": "10:00"
-        },
-        {
-          "day": "thursday",
-          "start": "09:00",
-          "end": "10:00"
-        }
-      ]
-    },
-    {
-      "id": "laes256-oo2-ursua-chanes",
-      "subject": "Gestión y Desarrollo del Capital Humano",
-      "professor": "Rosa María Jaime Ursúa Chanes",
-      "section": "OO2",
-      "sessions": [
-        {
-          "day": "monday",
-          "start": "11:00",
-          "end": "12:00"
-        },
-        {
-          "day": "tuesday",
-          "start": "11:00",
-          "end": "12:00"
-        },
-        {
-          "day": "wednesday",
-          "start": "11:00",
-          "end": "12:00"
-        },
-        {
-          "day": "thursday",
-          "start": "11:00",
-          "end": "12:00"
-        }
-      ]
-    },
-    {
-      "id": "laes256-oo3-candia-diaz",
-      "subject": "Gestión y Desarrollo del Capital Humano",
-      "professor": "María del Rosario Candia Díaz",
-      "section": "OO3",
-      "sessions": [
-        {
-          "day": "monday",
-          "start": "09:00",
-          "end": "10:00"
-        },
-        {
-          "day": "tuesday",
-          "start": "09:00",
-          "end": "10:00"
-        },
-        {
-          "day": "wednesday",
-          "start": "09:00",
-          "end": "10:00"
-        },
-        {
-          "day": "thursday",
-          "start": "09:00",
-          "end": "10:00"
-        }
-      ]
-    },
-    {
-      "id": "laes256-oo4-cordova-cortazar",
-      "subject": "Gestión y Desarrollo del Capital Humano",
-      "professor": "María Alicia Córdova Cortázar",
-      "section": "OO4",
-      "sessions": [
-        {
-          "day": "monday",
-          "start": "12:00",
-          "end": "13:00"
-        },
-        {
-          "day": "tuesday",
-          "start": "12:00",
-          "end": "13:00"
-        },
-        {
-          "day": "wednesday",
-          "start": "12:00",
-          "end": "13:00"
-        },
-        {
-          "day": "thursday",
-          "start": "12:00",
-          "end": "13:00"
-        }
-      ]
-    },
-    {
-      "id": "laes256-oo5-cordova-cortazar",
-      "subject": "Gestión y Desarrollo del Capital Humano",
-      "professor": "María Alicia Córdova Cortázar",
-      "section": "OO5",
-      "sessions": [
-        {
-          "day": "monday",
-          "start": "14:00",
-          "end": "15:00"
-        },
-        {
-          "day": "tuesday",
-          "start": "14:00",
-          "end": "15:00"
-        },
-        {
-          "day": "wednesday",
-          "start": "14:00",
-          "end": "15:00"
-        },
-        {
-          "day": "thursday",
-          "start": "14:00",
-          "end": "15:00"
-        }
-      ]
-    },
-    {
-      "id": "laes252-oo1-briones-hernandez",
-      "subject": "Contabilidad de Impuestos",
-      "professor": "María Elba Briones Hernández",
-      "section": "OO1",
-      "sessions": [
-        {
-          "day": "monday",
-          "start": "08:00",
-          "end": "09:00"
-        },
-        {
-          "day": "tuesday",
-          "start": "08:00",
-          "end": "09:00"
-        },
-        {
-          "day": "wednesday",
-          "start": "08:00",
-          "end": "09:00"
-        },
-        {
-          "day": "thursday",
-          "start": "08:00",
-          "end": "09:00"
-        }
-      ]
-    },
-    {
-      "id": "laes252-oo2-ahumada-fortiz",
-      "subject": "Contabilidad de Impuestos",
-      "professor": "Alejandro Ahumada Fortiz",
-      "section": "OO2",
-      "sessions": [
-        {
-          "day": "monday",
-          "start": "09:00",
-          "end": "10:00"
-        },
-        {
-          "day": "tuesday",
-          "start": "09:00",
-          "end": "10:00"
-        },
-        {
-          "day": "wednesday",
-          "start": "09:00",
-          "end": "10:00"
-        },
-        {
-          "day": "thursday",
-          "start": "09:00",
-          "end": "10:00"
-        }
-      ]
-    },
-    {
-      "id": "laes252-oo3-ahumada-fortiz",
-      "subject": "Contabilidad de Impuestos",
-      "professor": "Alejandro Ahumada Fortiz",
-      "section": "OO3",
-      "sessions": [
-        {
-          "day": "monday",
-          "start": "14:00",
-          "end": "15:00"
-        },
-        {
-          "day": "tuesday",
-          "start": "14:00",
-          "end": "15:00"
-        },
-        {
-          "day": "wednesday",
-          "start": "14:00",
-          "end": "15:00"
-        },
-        {
-          "day": "thursday",
-          "start": "14:00",
-          "end": "15:00"
-        }
-      ]
-    },
-    {
-      "id": "laes272-oo1-mena-arrazola",
-      "subject": "Derecho de la Seguridad Social",
-      "professor": "Mario Luis Mena Arrazola",
-      "section": "OO1",
-      "sessions": [
-        {
-          "day": "monday",
-          "start": "08:00",
-          "end": "09:00"
-        },
-        {
-          "day": "tuesday",
-          "start": "08:00",
-          "end": "09:00"
-        },
-        {
-          "day": "wednesday",
-          "start": "08:00",
-          "end": "09:00"
-        },
-        {
-          "day": "thursday",
-          "start": "08:00",
-          "end": "09:00"
-        }
-      ]
-    },
-    {
-      "id": "laes272-oo2-mena-arrazola",
-      "subject": "Derecho de la Seguridad Social",
-      "professor": "Mario Luis Mena Arrazola",
-      "section": "OO2",
-      "sessions": [
-        {
-          "day": "monday",
-          "start": "09:00",
-          "end": "10:00"
-        },
-        {
-          "day": "tuesday",
-          "start": "09:00",
-          "end": "10:00"
-        },
-        {
-          "day": "wednesday",
-          "start": "09:00",
-          "end": "10:00"
-        },
-        {
-          "day": "thursday",
-          "start": "09:00",
-          "end": "10:00"
-        }
-      ]
-    },
-    {
-      "id": "laes272-oo3-hernandez-vivanco",
-      "subject": "Derecho de la Seguridad Social",
-      "professor": "Guadalupe Arnulfo Hernández Vivanco",
-      "section": "OO3",
-      "sessions": [
-        {
-          "day": "monday",
-          "start": "19:00",
-          "end": "20:00"
-        },
-        {
-          "day": "tuesday",
-          "start": "19:00",
-          "end": "20:00"
-        },
-        {
-          "day": "wednesday",
-          "start": "19:00",
-          "end": "20:00"
-        },
-        {
-          "day": "thursday",
-          "start": "19:00",
-          "end": "20:00"
-        }
-      ]
-    },
-    {
-      "id": "laes272-oo4-hernandez-vivanco",
-      "subject": "Derecho de la Seguridad Social",
-      "professor": "Guadalupe Arnulfo Hernández Vivanco",
-      "section": "OO4",
-      "sessions": [
-        {
-          "day": "monday",
-          "start": "20:00",
-          "end": "21:00"
-        },
-        {
-          "day": "tuesday",
-          "start": "20:00",
-          "end": "21:00"
-        },
-        {
-          "day": "wednesday",
-          "start": "20:00",
-          "end": "21:00"
-        },
-        {
-          "day": "thursday",
-          "start": "20:00",
-          "end": "21:00"
-        }
-      ]
-    },
-    {
-      "id": "laes272-oo5-ambriz-morales",
-      "subject": "Derecho de la Seguridad Social",
-      "professor": "Jesús Ambriz Morales",
-      "section": "OO5",
-      "sessions": [
-        {
-          "day": "monday",
-          "start": "19:00",
-          "end": "20:00"
-        },
-        {
-          "day": "tuesday",
-          "start": "19:00",
-          "end": "20:00"
-        },
-        {
-          "day": "wednesday",
-          "start": "19:00",
-          "end": "20:00"
-        },
-        {
-          "day": "thursday",
-          "start": "19:00",
-          "end": "20:00"
-        }
-      ]
-    },
-    {
-      "id": "laes265-oo1-bonilla-maldonado",
-      "subject": "Desarrollo Emprendedor",
-      "professor": "Nicolás Bonilla Maldonado",
-      "section": "OO1",
-      "sessions": [
-        {
-          "day": "monday",
-          "start": "12:00",
-          "end": "13:00"
-        },
-        {
-          "day": "tuesday",
-          "start": "12:00",
-          "end": "13:00"
-        },
-        {
-          "day": "wednesday",
-          "start": "12:00",
-          "end": "13:00"
-        },
-        {
-          "day": "thursday",
-          "start": "12:00",
-          "end": "13:00"
-        }
-      ]
-    },
-    {
-      "id": "laes265-oo2-bonilla-maldonado",
-      "subject": "Desarrollo Emprendedor",
-      "professor": "Nicolás Bonilla Maldonado",
-      "section": "OO2",
-      "sessions": [
-        {
-          "day": "monday",
-          "start": "13:00",
-          "end": "14:00"
-        },
-        {
-          "day": "tuesday",
-          "start": "13:00",
-          "end": "14:00"
-        },
-        {
-          "day": "wednesday",
-          "start": "13:00",
-          "end": "14:00"
-        },
-        {
-          "day": "thursday",
-          "start": "13:00",
-          "end": "14:00"
-        }
-      ]
-    },
-    {
-      "id": "laes265-oo3-zenteno-vazquez",
-      "subject": "Desarrollo Emprendedor",
-      "professor": "Ana Claudia Zenteno Vázquez",
-      "section": "OO3",
-      "sessions": [
-        {
-          "day": "monday",
-          "start": "14:00",
-          "end": "15:00"
-        },
-        {
-          "day": "tuesday",
-          "start": "14:00",
-          "end": "15:00"
-        },
-        {
-          "day": "wednesday",
-          "start": "14:00",
-          "end": "15:00"
-        },
-        {
-          "day": "thursday",
-          "start": "14:00",
-          "end": "15:00"
-        }
-      ]
-    },
-    {
-      "id": "laes265-oo4-mora-villegas",
-      "subject": "Desarrollo Emprendedor",
-      "professor": "María Dimpna Mora Villegas",
-      "section": "OO4",
-      "sessions": [
-        {
-          "day": "monday",
-          "start": "11:00",
-          "end": "12:00"
-        },
-        {
-          "day": "tuesday",
-          "start": "11:00",
-          "end": "12:00"
-        },
-        {
-          "day": "wednesday",
-          "start": "11:00",
-          "end": "12:00"
-        },
-        {
-          "day": "thursday",
-          "start": "11:00",
-          "end": "12:00"
-        }
-      ]
-    },
-    {
-      "id": "laes265-oo5-toxqui-mendoza",
-      "subject": "Desarrollo Emprendedor",
-      "professor": "Marco Tulio Toxqui Mendoza",
-      "section": "OO5",
-      "sessions": [
-        {
-          "day": "monday",
-          "start": "08:00",
-          "end": "09:00"
-        },
-        {
-          "day": "tuesday",
-          "start": "08:00",
-          "end": "09:00"
-        },
-        {
-          "day": "wednesday",
-          "start": "08:00",
-          "end": "09:00"
-        },
-        {
-          "day": "thursday",
-          "start": "08:00",
-          "end": "09:00"
-        }
-      ]
-    },
-    {
-      "id": "laes265-oo6-mora-villegas",
-      "subject": "Desarrollo Emprendedor",
-      "professor": "María Dimpna Mora Villegas",
-      "section": "OO6",
-      "sessions": [
-        {
-          "day": "friday",
-          "start": "07:00",
-          "end": "11:00"
-        }
-      ]
-    },
-    {
-      "id": "laes254-oo1-romero-avila",
-      "subject": "Comportamiento del Consumidor",
-      "professor": "Juan Adrián Romero Ávila",
-      "section": "OO1",
-      "sessions": [
-        {
-          "day": "monday",
-          "start": "13:00",
-          "end": "14:00"
-        },
-        {
-          "day": "tuesday",
-          "start": "13:00",
-          "end": "14:00"
-        },
-        {
-          "day": "wednesday",
-          "start": "13:00",
-          "end": "14:00"
-        },
-        {
-          "day": "thursday",
-          "start": "13:00",
-          "end": "14:00"
-        }
-      ]
-    },
-    {
-      "id": "laes254-oo2-romero-avila",
-      "subject": "Comportamiento del Consumidor",
-      "professor": "Juan Adrián Romero Ávila",
-      "section": "OO2",
-      "sessions": [
-        {
-          "day": "monday",
-          "start": "17:00",
-          "end": "18:00"
-        },
-        {
-          "day": "tuesday",
-          "start": "17:00",
-          "end": "18:00"
-        },
-        {
-          "day": "wednesday",
-          "start": "17:00",
-          "end": "18:00"
-        },
-        {
-          "day": "thursday",
-          "start": "17:00",
-          "end": "18:00"
-        }
-      ]
-    },
-    {
-      "id": "laes254-oo3-lira-gutierrez",
-      "subject": "Comportamiento del Consumidor",
-      "professor": "Armando Lira Gutiérrez",
-      "section": "OO3",
-      "sessions": [
-        {
-          "day": "monday",
-          "start": "09:00",
-          "end": "10:00"
-        },
-        {
-          "day": "tuesday",
-          "start": "09:00",
-          "end": "10:00"
-        },
-        {
-          "day": "wednesday",
-          "start": "09:00",
-          "end": "10:00"
-        },
-        {
-          "day": "thursday",
-          "start": "09:00",
-          "end": "10:00"
-        }
-      ]
-    },
-    {
-      "id": "laes254-oo4-vargas-vallejo",
-      "subject": "Comportamiento del Consumidor",
-      "professor": "Leobardo de Jesús Vargas Vallejo",
-      "section": "OO4",
-      "sessions": [
-        {
-          "day": "monday",
-          "start": "12:00",
-          "end": "13:00"
-        },
-        {
-          "day": "tuesday",
-          "start": "12:00",
-          "end": "13:00"
-        },
-        {
-          "day": "wednesday",
-          "start": "12:00",
-          "end": "13:00"
-        },
-        {
-          "day": "thursday",
-          "start": "12:00",
-          "end": "13:00"
-        }
-      ]
-    },
-    {
-      "id": "laes254-oo5-tlaczani-romero",
-      "subject": "Comportamiento del Consumidor",
-      "professor": "Diana Paulina Tlaczani Romero",
-      "section": "OO5",
-      "sessions": [
-        {
-          "day": "monday",
-          "start": "12:00",
-          "end": "13:00"
-        },
-        {
-          "day": "tuesday",
-          "start": "12:00",
-          "end": "13:00"
-        },
-        {
-          "day": "wednesday",
-          "start": "12:00",
-          "end": "13:00"
-        },
-        {
-          "day": "thursday",
-          "start": "12:00",
-          "end": "13:00"
-        }
-      ]
-    },
-    {
-      "id": "laes261-oo1-izazaga-perez",
-      "subject": "Medios digitales para posicionar a la empresa",
-      "professor": "Irene Izazaga Pérez",
-      "section": "OO1",
-      "sessions": [
-        {
-          "day": "monday",
-          "start": "10:00",
-          "end": "11:00"
-        },
-        {
-          "day": "tuesday",
-          "start": "10:00",
-          "end": "11:00"
-        },
-        {
-          "day": "wednesday",
-          "start": "10:00",
-          "end": "11:00"
-        },
-        {
-          "day": "thursday",
-          "start": "10:00",
-          "end": "11:00"
-        }
-      ]
-    },
-    {
-      "id": "laes261-oo2-izazaga-perez",
-      "subject": "Medios digitales para posicionar a la empresa",
-      "professor": "Irene Izazaga Pérez",
-      "section": "OO2",
-      "sessions": [
-        {
-          "day": "monday",
-          "start": "13:00",
-          "end": "14:00"
-        },
-        {
-          "day": "tuesday",
-          "start": "13:00",
-          "end": "14:00"
-        },
-        {
-          "day": "wednesday",
-          "start": "13:00",
-          "end": "14:00"
-        },
-        {
-          "day": "thursday",
-          "start": "13:00",
-          "end": "14:00"
-        }
-      ]
-    },
-    {
-      "id": "laes261-oo3-izazaga-perez",
-      "subject": "Medios digitales para posicionar a la empresa",
-      "professor": "Irene Izazaga Pérez",
-      "section": "OO3",
-      "sessions": [
-        {
-          "day": "monday",
-          "start": "14:00",
-          "end": "15:00"
-        },
-        {
-          "day": "tuesday",
-          "start": "14:00",
-          "end": "15:00"
-        },
-        {
-          "day": "wednesday",
-          "start": "14:00",
-          "end": "15:00"
-        },
-        {
-          "day": "thursday",
-          "start": "14:00",
-          "end": "15:00"
-        }
-      ]
-    },
-    {
-      "id": "laes263-oo1-rugarcia-bou",
-      "subject": "Estadística aplicada a los negocios",
-      "professor": "Roberto Rugarcía Bou",
-      "section": "OO1",
-      "sessions": [
-        {
-          "day": "monday",
-          "start": "13:00",
-          "end": "14:00"
-        },
-        {
-          "day": "tuesday",
-          "start": "13:00",
-          "end": "14:00"
-        },
-        {
-          "day": "wednesday",
-          "start": "13:00",
-          "end": "14:00"
-        },
-        {
-          "day": "thursday",
-          "start": "13:00",
-          "end": "14:00"
-        }
-      ]
-    },
-    {
-      "id": "laes263-oo2-perez-solis",
-      "subject": "Estadística aplicada a los negocios",
-      "professor": "Araceli Bertha Pérez Solís",
-      "section": "OO2",
-      "sessions": [
-        {
-          "day": "monday",
-          "start": "18:00",
-          "end": "19:00"
-        },
-        {
-          "day": "tuesday",
-          "start": "18:00",
-          "end": "19:00"
-        },
-        {
-          "day": "wednesday",
-          "start": "18:00",
-          "end": "19:00"
-        },
-        {
-          "day": "thursday",
-          "start": "18:00",
-          "end": "19:00"
-        }
-      ]
-    },
-    {
-      "id": "laes268-oo1-gonzalez-trejo",
-      "subject": "Creación del valor compartido",
-      "professor": "José Roberto González Trejo",
-      "section": "OO1",
-      "sessions": [
-        {
-          "day": "monday",
-          "start": "13:00",
-          "end": "14:00"
-        },
-        {
-          "day": "tuesday",
-          "start": "13:00",
-          "end": "14:00"
-        },
-        {
-          "day": "wednesday",
-          "start": "13:00",
-          "end": "14:00"
-        },
-        {
-          "day": "thursday",
-          "start": "13:00",
-          "end": "14:00"
-        }
-      ]
-    },
-    {
-      "id": "laes268-oo2-gonzalez-trejo",
-      "subject": "Creación del valor compartido",
-      "professor": "José Roberto González Trejo",
-      "section": "OO2",
-      "sessions": [
-        {
-          "day": "monday",
-          "start": "15:00",
-          "end": "16:00"
-        },
-        {
-          "day": "tuesday",
-          "start": "15:00",
-          "end": "16:00"
-        },
-        {
-          "day": "wednesday",
-          "start": "15:00",
-          "end": "16:00"
-        },
-        {
-          "day": "thursday",
-          "start": "15:00",
-          "end": "16:00"
-        }
-      ]
-    },
-    {
-      "id": "laes268-oo3-gonzalez-trejo",
-      "subject": "Creación del valor compartido",
-      "professor": "José Roberto González Trejo",
-      "section": "OO3",
-      "sessions": [
-        {
-          "day": "friday",
-          "start": "13:00",
-          "end": "17:00"
-        }
-      ]
-    },
-    {
-      "id": "laes268-oo4-galaz-vega",
-      "subject": "Creación del valor compartido",
-      "professor": "Rosa de las Nieves Galaz Vega",
-      "section": "OO4",
-      "sessions": [
-        {
-          "day": "friday",
-          "start": "09:00",
-          "end": "13:00"
-        }
-      ]
-    },
-    {
-      "id": "laes600-oo1-vargas-vallejo",
-      "subject": "Comunicaciones Integradas del Marketing",
-      "professor": "Leobardo de Jesús Vargas Vallejo",
-      "section": "OO1",
-      "sessions": [
-        {
-          "day": "monday",
-          "start": "16:00",
-          "end": "17:00"
-        },
-        {
-          "day": "tuesday",
-          "start": "16:00",
-          "end": "17:00"
-        },
-        {
-          "day": "wednesday",
-          "start": "16:00",
-          "end": "17:00"
-        },
-        {
-          "day": "thursday",
-          "start": "16:00",
-          "end": "17:00"
-        }
-      ]
-    },
-    {
-      "id": "laes600-oo2-vargas-vallejo",
-      "subject": "Comunicaciones Integradas del Marketing",
-      "professor": "Leobardo de Jesús Vargas Vallejo",
-      "section": "OO2",
-      "sessions": [
-        {
-          "day": "monday",
-          "start": "10:00",
-          "end": "11:00"
-        },
-        {
-          "day": "tuesday",
-          "start": "10:00",
-          "end": "11:00"
-        },
-        {
-          "day": "wednesday",
-          "start": "10:00",
-          "end": "11:00"
-        },
-        {
-          "day": "thursday",
-          "start": "10:00",
-          "end": "11:00"
-        }
-      ]
-    },
-    {
-      "id": "laes600-oo3-galaz-vega",
-      "subject": "Comunicaciones Integradas del Marketing",
-      "professor": "Rosa de las Nieves Galaz Vega",
-      "section": "OO3",
-      "sessions": [
-        {
-          "day": "monday",
-          "start": "08:00",
-          "end": "09:00"
-        },
-        {
-          "day": "tuesday",
-          "start": "08:00",
-          "end": "09:00"
-        },
-        {
-          "day": "wednesday",
-          "start": "08:00",
-          "end": "09:00"
-        },
-        {
-          "day": "thursday",
-          "start": "08:00",
-          "end": "09:00"
-        }
-      ]
-    },
-    {
-      "id": "laes600-oo4-romero-graciano",
-      "subject": "Comunicaciones Integradas del Marketing",
-      "professor": "Ángel Romero Graciano",
-      "section": "OO4",
-      "sessions": [
-        {
-          "day": "monday",
-          "start": "08:00",
-          "end": "09:00"
-        },
-        {
-          "day": "tuesday",
-          "start": "08:00",
-          "end": "09:00"
-        },
-        {
-          "day": "wednesday",
-          "start": "08:00",
-          "end": "09:00"
-        },
-        {
-          "day": "thursday",
-          "start": "08:00",
-          "end": "09:00"
-        }
-      ]
-    },
-    {
-      "id": "laes602-oo1-romero-graciano",
-      "subject": "Mercadotecnia de Servicios",
-      "professor": "Ángel Romero Graciano",
-      "section": "OO1",
-      "sessions": [
-        {
-          "day": "monday",
-          "start": "09:00",
-          "end": "10:00"
-        },
-        {
-          "day": "tuesday",
-          "start": "09:00",
-          "end": "10:00"
-        },
-        {
-          "day": "wednesday",
-          "start": "09:00",
-          "end": "10:00"
-        },
-        {
-          "day": "thursday",
-          "start": "09:00",
-          "end": "10:00"
-        }
-      ]
-    },
-    {
-      "id": "laes602-oo2-carmona-morales",
-      "subject": "Mercadotecnia de Servicios",
-      "professor": "Lizbeth Carmona Morales",
-      "section": "OO2",
-      "sessions": [
-        {
-          "day": "friday",
-          "start": "07:00",
-          "end": "11:00"
-        }
-      ]
-    },
-    {
-      "id": "laes606-oo1-tlaxcalteca-tlahuel",
-      "subject": "Gestión Logística",
-      "professor": "Guadalupe Tlaxcalteca Tlahuel",
-      "section": "OO1",
-      "sessions": [
-        {
-          "day": "monday",
-          "start": "12:00",
-          "end": "13:00"
-        },
-        {
-          "day": "tuesday",
-          "start": "12:00",
-          "end": "13:00"
-        },
-        {
-          "day": "wednesday",
-          "start": "12:00",
-          "end": "13:00"
-        },
-        {
-          "day": "thursday",
-          "start": "12:00",
-          "end": "13:00"
-        }
-      ]
-    },
-    {
-      "id": "laes606-oo2-martinez-leon",
-      "subject": "Gestión Logística",
-      "professor": "Rosario Martínez León",
-      "section": "OO2",
-      "sessions": [
-        {
-          "day": "monday",
-          "start": "18:00",
-          "end": "19:00"
-        },
-        {
-          "day": "tuesday",
-          "start": "18:00",
-          "end": "19:00"
-        },
-        {
-          "day": "wednesday",
-          "start": "18:00",
-          "end": "19:00"
-        },
-        {
-          "day": "thursday",
-          "start": "18:00",
-          "end": "19:00"
-        }
-      ]
-    },
-    {
-      "id": "laes607-oo1-mora-rodriguez",
-      "subject": "Estadística para la Toma de Decisiones",
-      "professor": "David Mora Rodríguez",
-      "section": "OO1",
-      "sessions": [
-        {
-          "day": "monday",
-          "start": "15:00",
-          "end": "16:00"
-        },
-        {
-          "day": "tuesday",
-          "start": "15:00",
-          "end": "16:00"
-        },
-        {
-          "day": "wednesday",
-          "start": "15:00",
-          "end": "16:00"
-        },
-        {
-          "day": "thursday",
-          "start": "15:00",
-          "end": "16:00"
-        }
-      ]
-    },
-    {
-      "id": "laes608-oo1-toxqui-mendoza",
-      "subject": "Análisis y Administración de Riesgos",
-      "professor": "Marco Tulio Toxqui Mendoza",
-      "section": "OO1",
-      "sessions": [
-        {
-          "day": "monday",
-          "start": "12:00",
-          "end": "13:00"
-        },
-        {
-          "day": "tuesday",
-          "start": "12:00",
-          "end": "13:00"
-        },
-        {
-          "day": "wednesday",
-          "start": "12:00",
-          "end": "13:00"
-        },
-        {
-          "day": "thursday",
-          "start": "12:00",
-          "end": "13:00"
-        }
-      ]
-    },
-    {
-      "id": "laes608-oo2-toxqui-mendoza",
-      "subject": "Análisis y Administración de Riesgos",
-      "professor": "Marco Tulio Toxqui Mendoza",
-      "section": "OO2",
-      "sessions": [
-        {
-          "day": "monday",
-          "start": "10:00",
-          "end": "11:00"
-        },
-        {
-          "day": "tuesday",
-          "start": "10:00",
-          "end": "11:00"
-        },
-        {
-          "day": "wednesday",
-          "start": "10:00",
-          "end": "11:00"
-        },
-        {
-          "day": "thursday",
-          "start": "10:00",
-          "end": "11:00"
-        }
-      ]
-    },
-    {
-      "id": "laes800-oo1-vargas-vallejo",
-      "subject": "Emprendimiento Social",
-      "professor": "Leobardo de Jesús Vargas Vallejo",
-      "section": "OO1",
-      "sessions": [
-        {
-          "day": "monday",
-          "start": "11:00",
-          "end": "12:00"
-        },
-        {
-          "day": "tuesday",
-          "start": "11:00",
-          "end": "12:00"
-        },
-        {
-          "day": "wednesday",
-          "start": "11:00",
-          "end": "12:00"
-        },
-        {
-          "day": "thursday",
-          "start": "11:00",
-          "end": "12:00"
-        }
-      ]
-    }
+    "id": "laes250-oo1-diaz-perez",
+    "subject": "Administración Estratégica",
+    "professor": "Ricardo Díaz Pérez",
+    "section": "OO1",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "19:00",
+        "end": "20:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "19:00",
+        "end": "20:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "19:00",
+        "end": "20:00"
+      },
+      {
+        "day": "thursday",
+        "start": "19:00",
+        "end": "20:00"
+      }
+    ]
+  },
+  {
+    "id": "laes250-oo2-mora-villegas",
+    "subject": "Administración Estratégica",
+    "professor": "María Dimpna Mora Villegas",
+    "section": "OO2",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "10:00",
+        "end": "11:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "10:00",
+        "end": "11:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "10:00",
+        "end": "11:00"
+      },
+      {
+        "day": "thursday",
+        "start": "10:00",
+        "end": "11:00"
+      }
+    ]
+  },
+  {
+    "id": "laes250-oo3-aceves-cabrera",
+    "subject": "Administración Estratégica",
+    "professor": "Luis Fernando Aceves Cabrera",
+    "section": "OO3",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "12:00",
+        "end": "13:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "12:00",
+        "end": "13:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "12:00",
+        "end": "13:00"
+      },
+      {
+        "day": "thursday",
+        "start": "12:00",
+        "end": "13:00"
+      }
+    ]
+  },
+  {
+    "id": "laes250-oo4-torres-soto",
+    "subject": "Administración Estratégica",
+    "professor": "María Rocío Torres Soto",
+    "section": "OO4",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "11:00",
+        "end": "12:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "11:00",
+        "end": "12:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "11:00",
+        "end": "12:00"
+      },
+      {
+        "day": "thursday",
+        "start": "11:00",
+        "end": "12:00"
+      }
+    ]
+  },
+  {
+    "id": "laes250-oo5-aceves-cabrera",
+    "subject": "Administración Estratégica",
+    "professor": "Luis Fernando Aceves Cabrera",
+    "section": "OO5",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "13:00",
+        "end": "14:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "13:00",
+        "end": "14:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "13:00",
+        "end": "14:00"
+      },
+      {
+        "day": "thursday",
+        "start": "13:00",
+        "end": "14:00"
+      }
+    ]
+  },
+  {
+    "id": "laes258-oo1-vazquez-sanchez",
+    "subject": "Administración de Procesos Productivos",
+    "professor": "Rosa Adriana Vázquez Sánchez",
+    "section": "OO1",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "15:00",
+        "end": "16:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "15:00",
+        "end": "16:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "15:00",
+        "end": "16:00"
+      },
+      {
+        "day": "thursday",
+        "start": "15:00",
+        "end": "16:00"
+      }
+    ]
+  },
+  {
+    "id": "laes258-oo2-lara-vicuna",
+    "subject": "Administración de Procesos Productivos",
+    "professor": "Alejandro Pérez Lara Vicuña",
+    "section": "OO2",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "16:00",
+        "end": "17:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "16:00",
+        "end": "17:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "16:00",
+        "end": "17:00"
+      },
+      {
+        "day": "thursday",
+        "start": "16:00",
+        "end": "17:00"
+      }
+    ]
+  },
+  {
+    "id": "laes258-oo3-palacios-polo",
+    "subject": "Administración de Procesos Productivos",
+    "professor": "María del Pilar Guadalupe Palacios Polo",
+    "section": "OO3",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "07:00",
+        "end": "08:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "07:00",
+        "end": "08:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "07:00",
+        "end": "08:00"
+      },
+      {
+        "day": "thursday",
+        "start": "07:00",
+        "end": "08:00"
+      }
+    ]
+  },
+  {
+    "id": "laes258-oo4-palacios-polo",
+    "subject": "Administración de Procesos Productivos",
+    "professor": "María del Pilar Guadalupe Palacios Polo",
+    "section": "OO4",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "08:00",
+        "end": "09:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "08:00",
+        "end": "09:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "08:00",
+        "end": "09:00"
+      },
+      {
+        "day": "thursday",
+        "start": "08:00",
+        "end": "09:00"
+      }
+    ]
+  },
+  {
+    "id": "laes258-oo5-palacios-polo",
+    "subject": "Administración de Procesos Productivos",
+    "professor": "María del Pilar Guadalupe Palacios Polo",
+    "section": "OO5",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "09:00",
+        "end": "10:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "09:00",
+        "end": "10:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "09:00",
+        "end": "10:00"
+      },
+      {
+        "day": "thursday",
+        "start": "09:00",
+        "end": "10:00"
+      }
+    ]
+  },
+  {
+    "id": "laes258-oo6-martinez-leon",
+    "subject": "Administración de Procesos Productivos",
+    "professor": "Rosario Martínez León",
+    "section": "OO6",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "17:00",
+        "end": "18:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "17:00",
+        "end": "18:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "17:00",
+        "end": "18:00"
+      },
+      {
+        "day": "thursday",
+        "start": "17:00",
+        "end": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "laes256-oo1-toxqui-mendoza",
+    "subject": "Gestión y Desarrollo del Capital Humano",
+    "professor": "Marco Tulio Toxqui Mendoza",
+    "section": "OO1",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "09:00",
+        "end": "10:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "09:00",
+        "end": "10:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "09:00",
+        "end": "10:00"
+      },
+      {
+        "day": "thursday",
+        "start": "09:00",
+        "end": "10:00"
+      }
+    ]
+  },
+  {
+    "id": "laes256-oo2-ursua-chanes",
+    "subject": "Gestión y Desarrollo del Capital Humano",
+    "professor": "Rosa María Jaime Ursúa Chanes",
+    "section": "OO2",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "11:00",
+        "end": "12:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "11:00",
+        "end": "12:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "11:00",
+        "end": "12:00"
+      },
+      {
+        "day": "thursday",
+        "start": "11:00",
+        "end": "12:00"
+      }
+    ]
+  },
+  {
+    "id": "laes256-oo3-candia-diaz",
+    "subject": "Gestión y Desarrollo del Capital Humano",
+    "professor": "María del Rosario Candia Díaz",
+    "section": "OO3",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "09:00",
+        "end": "10:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "09:00",
+        "end": "10:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "09:00",
+        "end": "10:00"
+      },
+      {
+        "day": "thursday",
+        "start": "09:00",
+        "end": "10:00"
+      }
+    ]
+  },
+  {
+    "id": "laes256-oo4-cordova-cortazar",
+    "subject": "Gestión y Desarrollo del Capital Humano",
+    "professor": "María Alicia Córdova Cortázar",
+    "section": "OO4",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "12:00",
+        "end": "13:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "12:00",
+        "end": "13:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "12:00",
+        "end": "13:00"
+      },
+      {
+        "day": "thursday",
+        "start": "12:00",
+        "end": "13:00"
+      }
+    ]
+  },
+  {
+    "id": "laes256-oo5-cordova-cortazar",
+    "subject": "Gestión y Desarrollo del Capital Humano",
+    "professor": "María Alicia Córdova Cortázar",
+    "section": "OO5",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "14:00",
+        "end": "15:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "14:00",
+        "end": "15:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "14:00",
+        "end": "15:00"
+      },
+      {
+        "day": "thursday",
+        "start": "14:00",
+        "end": "15:00"
+      }
+    ]
+  },
+  {
+    "id": "laes252-oo1-briones-hernandez",
+    "subject": "Contabilidad de Impuestos",
+    "professor": "María Elba Briones Hernández",
+    "section": "OO1",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "08:00",
+        "end": "09:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "08:00",
+        "end": "09:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "08:00",
+        "end": "09:00"
+      },
+      {
+        "day": "thursday",
+        "start": "08:00",
+        "end": "09:00"
+      }
+    ]
+  },
+  {
+    "id": "laes252-oo2-ahumada-fortiz",
+    "subject": "Contabilidad de Impuestos",
+    "professor": "Alejandro Ahumada Fortiz",
+    "section": "OO2",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "09:00",
+        "end": "10:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "09:00",
+        "end": "10:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "09:00",
+        "end": "10:00"
+      },
+      {
+        "day": "thursday",
+        "start": "09:00",
+        "end": "10:00"
+      }
+    ]
+  },
+  {
+    "id": "laes252-oo3-ahumada-fortiz",
+    "subject": "Contabilidad de Impuestos",
+    "professor": "Alejandro Ahumada Fortiz",
+    "section": "OO3",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "14:00",
+        "end": "15:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "14:00",
+        "end": "15:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "14:00",
+        "end": "15:00"
+      },
+      {
+        "day": "thursday",
+        "start": "14:00",
+        "end": "15:00"
+      }
+    ]
+  },
+  {
+    "id": "laes272-oo1-mena-arrazola",
+    "subject": "Derecho de la Seguridad Social",
+    "professor": "Mario Luis Mena Arrazola",
+    "section": "OO1",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "08:00",
+        "end": "09:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "08:00",
+        "end": "09:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "08:00",
+        "end": "09:00"
+      },
+      {
+        "day": "thursday",
+        "start": "08:00",
+        "end": "09:00"
+      }
+    ]
+  },
+  {
+    "id": "laes272-oo2-mena-arrazola",
+    "subject": "Derecho de la Seguridad Social",
+    "professor": "Mario Luis Mena Arrazola",
+    "section": "OO2",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "09:00",
+        "end": "10:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "09:00",
+        "end": "10:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "09:00",
+        "end": "10:00"
+      },
+      {
+        "day": "thursday",
+        "start": "09:00",
+        "end": "10:00"
+      }
+    ]
+  },
+  {
+    "id": "laes272-oo3-hernandez-vivanco",
+    "subject": "Derecho de la Seguridad Social",
+    "professor": "Guadalupe Arnulfo Hernández Vivanco",
+    "section": "OO3",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "19:00",
+        "end": "20:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "19:00",
+        "end": "20:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "19:00",
+        "end": "20:00"
+      },
+      {
+        "day": "thursday",
+        "start": "19:00",
+        "end": "20:00"
+      }
+    ]
+  },
+  {
+    "id": "laes272-oo4-hernandez-vivanco",
+    "subject": "Derecho de la Seguridad Social",
+    "professor": "Guadalupe Arnulfo Hernández Vivanco",
+    "section": "OO4",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "20:00",
+        "end": "21:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "20:00",
+        "end": "21:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "20:00",
+        "end": "21:00"
+      },
+      {
+        "day": "thursday",
+        "start": "20:00",
+        "end": "21:00"
+      }
+    ]
+  },
+  {
+    "id": "laes272-oo5-ambriz-morales",
+    "subject": "Derecho de la Seguridad Social",
+    "professor": "Jesús Ambriz Morales",
+    "section": "OO5",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "19:00",
+        "end": "20:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "19:00",
+        "end": "20:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "19:00",
+        "end": "20:00"
+      },
+      {
+        "day": "thursday",
+        "start": "19:00",
+        "end": "20:00"
+      }
+    ]
+  },
+  {
+    "id": "laes265-oo1-bonilla-maldonado",
+    "subject": "Desarrollo Emprendedor",
+    "professor": "Nicolás Bonilla Maldonado",
+    "section": "OO1",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "12:00",
+        "end": "13:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "12:00",
+        "end": "13:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "12:00",
+        "end": "13:00"
+      },
+      {
+        "day": "thursday",
+        "start": "12:00",
+        "end": "13:00"
+      }
+    ]
+  },
+  {
+    "id": "laes265-oo2-bonilla-maldonado",
+    "subject": "Desarrollo Emprendedor",
+    "professor": "Nicolás Bonilla Maldonado",
+    "section": "OO2",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "13:00",
+        "end": "14:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "13:00",
+        "end": "14:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "13:00",
+        "end": "14:00"
+      },
+      {
+        "day": "thursday",
+        "start": "13:00",
+        "end": "14:00"
+      }
+    ]
+  },
+  {
+    "id": "laes265-oo3-zenteno-vazquez",
+    "subject": "Desarrollo Emprendedor",
+    "professor": "Ana Claudia Zenteno Vázquez",
+    "section": "OO3",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "14:00",
+        "end": "15:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "14:00",
+        "end": "15:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "14:00",
+        "end": "15:00"
+      },
+      {
+        "day": "thursday",
+        "start": "14:00",
+        "end": "15:00"
+      }
+    ]
+  },
+  {
+    "id": "laes265-oo4-mora-villegas",
+    "subject": "Desarrollo Emprendedor",
+    "professor": "María Dimpna Mora Villegas",
+    "section": "OO4",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "11:00",
+        "end": "12:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "11:00",
+        "end": "12:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "11:00",
+        "end": "12:00"
+      },
+      {
+        "day": "thursday",
+        "start": "11:00",
+        "end": "12:00"
+      }
+    ]
+  },
+  {
+    "id": "laes265-oo5-toxqui-mendoza",
+    "subject": "Desarrollo Emprendedor",
+    "professor": "Marco Tulio Toxqui Mendoza",
+    "section": "OO5",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "08:00",
+        "end": "09:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "08:00",
+        "end": "09:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "08:00",
+        "end": "09:00"
+      },
+      {
+        "day": "thursday",
+        "start": "08:00",
+        "end": "09:00"
+      }
+    ]
+  },
+  {
+    "id": "laes265-oo6-mora-villegas",
+    "subject": "Desarrollo Emprendedor",
+    "professor": "María Dimpna Mora Villegas",
+    "section": "OO6",
+    "sessions": [
+      {
+        "day": "friday",
+        "start": "07:00",
+        "end": "11:00"
+      }
+    ]
+  },
+  {
+    "id": "laes254-oo1-romero-avila",
+    "subject": "Comportamiento del Consumidor",
+    "professor": "Juan Adrián Romero Ávila",
+    "section": "OO1",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "13:00",
+        "end": "14:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "13:00",
+        "end": "14:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "13:00",
+        "end": "14:00"
+      },
+      {
+        "day": "thursday",
+        "start": "13:00",
+        "end": "14:00"
+      }
+    ]
+  },
+  {
+    "id": "laes254-oo2-romero-avila",
+    "subject": "Comportamiento del Consumidor",
+    "professor": "Juan Adrián Romero Ávila",
+    "section": "OO2",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "17:00",
+        "end": "18:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "17:00",
+        "end": "18:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "17:00",
+        "end": "18:00"
+      },
+      {
+        "day": "thursday",
+        "start": "17:00",
+        "end": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "laes254-oo3-lira-gutierrez",
+    "subject": "Comportamiento del Consumidor",
+    "professor": "Armando Lira Gutiérrez",
+    "section": "OO3",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "09:00",
+        "end": "10:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "09:00",
+        "end": "10:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "09:00",
+        "end": "10:00"
+      },
+      {
+        "day": "thursday",
+        "start": "09:00",
+        "end": "10:00"
+      }
+    ]
+  },
+  {
+    "id": "laes254-oo4-vargas-vallejo",
+    "subject": "Comportamiento del Consumidor",
+    "professor": "Leobardo de Jesús Vargas Vallejo",
+    "section": "OO4",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "12:00",
+        "end": "13:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "12:00",
+        "end": "13:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "12:00",
+        "end": "13:00"
+      },
+      {
+        "day": "thursday",
+        "start": "12:00",
+        "end": "13:00"
+      }
+    ]
+  },
+  {
+    "id": "laes254-oo5-tlaczani-romero",
+    "subject": "Comportamiento del Consumidor",
+    "professor": "Diana Paulina Tlaczani Romero",
+    "section": "OO5",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "12:00",
+        "end": "13:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "12:00",
+        "end": "13:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "12:00",
+        "end": "13:00"
+      },
+      {
+        "day": "thursday",
+        "start": "12:00",
+        "end": "13:00"
+      }
+    ]
+  },
+  {
+    "id": "laes261-oo1-izazaga-perez",
+    "subject": "Medios digitales para posicionar a la empresa",
+    "professor": "Irene Izazaga Pérez",
+    "section": "OO1",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "10:00",
+        "end": "11:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "10:00",
+        "end": "11:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "10:00",
+        "end": "11:00"
+      },
+      {
+        "day": "thursday",
+        "start": "10:00",
+        "end": "11:00"
+      }
+    ]
+  },
+  {
+    "id": "laes261-oo2-izazaga-perez",
+    "subject": "Medios digitales para posicionar a la empresa",
+    "professor": "Irene Izazaga Pérez",
+    "section": "OO2",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "13:00",
+        "end": "14:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "13:00",
+        "end": "14:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "13:00",
+        "end": "14:00"
+      },
+      {
+        "day": "thursday",
+        "start": "13:00",
+        "end": "14:00"
+      }
+    ]
+  },
+  {
+    "id": "laes261-oo3-izazaga-perez",
+    "subject": "Medios digitales para posicionar a la empresa",
+    "professor": "Irene Izazaga Pérez",
+    "section": "OO3",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "14:00",
+        "end": "15:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "14:00",
+        "end": "15:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "14:00",
+        "end": "15:00"
+      },
+      {
+        "day": "thursday",
+        "start": "14:00",
+        "end": "15:00"
+      }
+    ]
+  },
+  {
+    "id": "laes263-oo1-rugarcia-bou",
+    "subject": "Estadística aplicada a los negocios",
+    "professor": "Roberto Rugarcía Bou",
+    "section": "OO1",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "13:00",
+        "end": "14:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "13:00",
+        "end": "14:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "13:00",
+        "end": "14:00"
+      },
+      {
+        "day": "thursday",
+        "start": "13:00",
+        "end": "14:00"
+      }
+    ]
+  },
+  {
+    "id": "laes263-oo2-perez-solis",
+    "subject": "Estadística aplicada a los negocios",
+    "professor": "Araceli Bertha Pérez Solís",
+    "section": "OO2",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "18:00",
+        "end": "19:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "18:00",
+        "end": "19:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "18:00",
+        "end": "19:00"
+      },
+      {
+        "day": "thursday",
+        "start": "18:00",
+        "end": "19:00"
+      }
+    ]
+  },
+  {
+    "id": "laes268-oo1-gonzalez-trejo",
+    "subject": "Creación del valor compartido",
+    "professor": "José Roberto González Trejo",
+    "section": "OO1",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "13:00",
+        "end": "14:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "13:00",
+        "end": "14:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "13:00",
+        "end": "14:00"
+      },
+      {
+        "day": "thursday",
+        "start": "13:00",
+        "end": "14:00"
+      }
+    ]
+  },
+  {
+    "id": "laes268-oo2-gonzalez-trejo",
+    "subject": "Creación del valor compartido",
+    "professor": "José Roberto González Trejo",
+    "section": "OO2",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "15:00",
+        "end": "16:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "15:00",
+        "end": "16:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "15:00",
+        "end": "16:00"
+      },
+      {
+        "day": "thursday",
+        "start": "15:00",
+        "end": "16:00"
+      }
+    ]
+  },
+  {
+    "id": "laes268-oo3-gonzalez-trejo",
+    "subject": "Creación del valor compartido",
+    "professor": "José Roberto González Trejo",
+    "section": "OO3",
+    "sessions": [
+      {
+        "day": "friday",
+        "start": "13:00",
+        "end": "17:00"
+      }
+    ]
+  },
+  {
+    "id": "laes268-oo4-galaz-vega",
+    "subject": "Creación del valor compartido",
+    "professor": "Rosa de las Nieves Galaz Vega",
+    "section": "OO4",
+    "sessions": [
+      {
+        "day": "friday",
+        "start": "09:00",
+        "end": "13:00"
+      }
+    ]
+  },
+  {
+    "id": "laes600-oo1-vargas-vallejo",
+    "subject": "Comunicaciones Integradas del Marketing",
+    "professor": "Leobardo de Jesús Vargas Vallejo",
+    "section": "OO1",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "16:00",
+        "end": "17:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "16:00",
+        "end": "17:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "16:00",
+        "end": "17:00"
+      },
+      {
+        "day": "thursday",
+        "start": "16:00",
+        "end": "17:00"
+      }
+    ]
+  },
+  {
+    "id": "laes600-oo2-vargas-vallejo",
+    "subject": "Comunicaciones Integradas del Marketing",
+    "professor": "Leobardo de Jesús Vargas Vallejo",
+    "section": "OO2",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "10:00",
+        "end": "11:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "10:00",
+        "end": "11:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "10:00",
+        "end": "11:00"
+      },
+      {
+        "day": "thursday",
+        "start": "10:00",
+        "end": "11:00"
+      }
+    ]
+  },
+  {
+    "id": "laes600-oo3-galaz-vega",
+    "subject": "Comunicaciones Integradas del Marketing",
+    "professor": "Rosa de las Nieves Galaz Vega",
+    "section": "OO3",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "08:00",
+        "end": "09:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "08:00",
+        "end": "09:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "08:00",
+        "end": "09:00"
+      },
+      {
+        "day": "thursday",
+        "start": "08:00",
+        "end": "09:00"
+      }
+    ]
+  },
+  {
+    "id": "laes600-oo4-romero-graciano",
+    "subject": "Comunicaciones Integradas del Marketing",
+    "professor": "Ángel Romero Graciano",
+    "section": "OO4",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "08:00",
+        "end": "09:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "08:00",
+        "end": "09:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "08:00",
+        "end": "09:00"
+      },
+      {
+        "day": "thursday",
+        "start": "08:00",
+        "end": "09:00"
+      }
+    ]
+  },
+  {
+    "id": "laes602-oo1-romero-graciano",
+    "subject": "Mercadotecnia de Servicios",
+    "professor": "Ángel Romero Graciano",
+    "section": "OO1",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "09:00",
+        "end": "10:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "09:00",
+        "end": "10:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "09:00",
+        "end": "10:00"
+      },
+      {
+        "day": "thursday",
+        "start": "09:00",
+        "end": "10:00"
+      }
+    ]
+  },
+  {
+    "id": "laes602-oo2-carmona-morales",
+    "subject": "Mercadotecnia de Servicios",
+    "professor": "Lizbeth Carmona Morales",
+    "section": "OO2",
+    "sessions": [
+      {
+        "day": "friday",
+        "start": "07:00",
+        "end": "11:00"
+      }
+    ]
+  },
+  {
+    "id": "laes606-oo1-tlaxcalteca-tlahuel",
+    "subject": "Gestión Logística",
+    "professor": "Guadalupe Tlaxcalteca Tlahuel",
+    "section": "OO1",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "12:00",
+        "end": "13:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "12:00",
+        "end": "13:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "12:00",
+        "end": "13:00"
+      },
+      {
+        "day": "thursday",
+        "start": "12:00",
+        "end": "13:00"
+      }
+    ]
+  },
+  {
+    "id": "laes606-oo2-martinez-leon",
+    "subject": "Gestión Logística",
+    "professor": "Rosario Martínez León",
+    "section": "OO2",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "18:00",
+        "end": "19:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "18:00",
+        "end": "19:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "18:00",
+        "end": "19:00"
+      },
+      {
+        "day": "thursday",
+        "start": "18:00",
+        "end": "19:00"
+      }
+    ]
+  },
+  {
+    "id": "laes607-oo1-mora-rodriguez",
+    "subject": "Estadística para la Toma de Decisiones",
+    "professor": "David Mora Rodríguez",
+    "section": "OO1",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "15:00",
+        "end": "16:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "15:00",
+        "end": "16:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "15:00",
+        "end": "16:00"
+      },
+      {
+        "day": "thursday",
+        "start": "15:00",
+        "end": "16:00"
+      }
+    ]
+  },
+  {
+    "id": "laes608-oo1-toxqui-mendoza",
+    "subject": "Análisis y Administración de Riesgos",
+    "professor": "Marco Tulio Toxqui Mendoza",
+    "section": "OO1",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "12:00",
+        "end": "13:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "12:00",
+        "end": "13:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "12:00",
+        "end": "13:00"
+      },
+      {
+        "day": "thursday",
+        "start": "12:00",
+        "end": "13:00"
+      }
+    ]
+  },
+  {
+    "id": "laes608-oo2-toxqui-mendoza",
+    "subject": "Análisis y Administración de Riesgos",
+    "professor": "Marco Tulio Toxqui Mendoza",
+    "section": "OO2",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "10:00",
+        "end": "11:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "10:00",
+        "end": "11:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "10:00",
+        "end": "11:00"
+      },
+      {
+        "day": "thursday",
+        "start": "10:00",
+        "end": "11:00"
+      }
+    ]
+  },
+  {
+    "id": "laes800-oo1-vargas-vallejo",
+    "subject": "Emprendimiento Social",
+    "professor": "Leobardo de Jesús Vargas Vallejo",
+    "section": "OO1",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "11:00",
+        "end": "12:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "11:00",
+        "end": "12:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "11:00",
+        "end": "12:00"
+      },
+      {
+        "day": "thursday",
+        "start": "11:00",
+        "end": "12:00"
+      }
+    ]
+  }
 ]

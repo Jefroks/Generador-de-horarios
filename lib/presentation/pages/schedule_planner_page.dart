@@ -19,6 +19,7 @@ class SchedulePlannerPage extends StatefulWidget {
 
 class _SchedulePlannerPageState extends State<SchedulePlannerPage> {
   int _selectedMobileTab = 0;
+  bool _isDesktopSidePanelCollapsed = false;
 
   @override
   Widget build(BuildContext context) {
@@ -50,7 +51,16 @@ class _SchedulePlannerPageState extends State<SchedulePlannerPage> {
               ? const Center(child: CircularProgressIndicator())
               : SafeArea(
                   child: isDesktop
-                      ? _DesktopLayout(controller: controller)
+                      ? _DesktopLayout(
+                          controller: controller,
+                          sidePanelCollapsed: _isDesktopSidePanelCollapsed,
+                          onToggleSidePanel: () {
+                            setState(
+                              () => _isDesktopSidePanelCollapsed =
+                                  !_isDesktopSidePanelCollapsed,
+                            );
+                          },
+                        )
                       : _MobileLayout(
                           controller: controller,
                           selectedTab: _selectedMobileTab,
@@ -83,22 +93,81 @@ class _SchedulePlannerPageState extends State<SchedulePlannerPage> {
 }
 
 class _DesktopLayout extends StatelessWidget {
-  const _DesktopLayout({required this.controller});
+  const _DesktopLayout({
+    required this.controller,
+    required this.sidePanelCollapsed,
+    required this.onToggleSidePanel,
+  });
 
   final ScheduleController controller;
+  final bool sidePanelCollapsed;
+  final VoidCallback onToggleSidePanel;
+
+  static const double _expandedPanelWidth = 420;
+  static const double _collapsedPanelWidth = 64;
 
   @override
   Widget build(BuildContext context) {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        SizedBox(
-          width: 420,
-          child: _SidePanel(controller: controller),
+        AnimatedContainer(
+          duration: const Duration(milliseconds: 260),
+          curve: Curves.easeInOutCubic,
+          width: sidePanelCollapsed ? _collapsedPanelWidth : _expandedPanelWidth,
+          child: ClipRect(
+            child: sidePanelCollapsed
+                ? _CollapsedSidePanel(onExpand: onToggleSidePanel)
+                : _SidePanel(
+                    controller: controller,
+                    onCollapse: onToggleSidePanel,
+                  ),
+          ),
         ),
         const VerticalDivider(width: 1),
         Expanded(child: _ScheduleArea(controller: controller)),
       ],
+    );
+  }
+}
+
+class _CollapsedSidePanel extends StatelessWidget {
+  const _CollapsedSidePanel({required this.onExpand});
+
+  final VoidCallback onExpand;
+
+  @override
+  Widget build(BuildContext context) {
+    final colorScheme = Theme.of(context).colorScheme;
+
+    return DecoratedBox(
+      decoration: BoxDecoration(
+        color: colorScheme.surfaceVariant.withOpacity(0.35),
+      ),
+      child: Column(
+        children: [
+          const SizedBox(height: 8),
+          IconButton.filledTonal(
+            tooltip: 'Mostrar selección de profesores',
+            icon: const Icon(Icons.chevron_right),
+            onPressed: onExpand,
+          ),
+          const SizedBox(height: 16),
+          Expanded(
+            child: Center(
+              child: RotatedBox(
+                quarterTurns: 3,
+                child: Text(
+                  'Selección de profesores',
+                  maxLines: 1,
+                  style: Theme.of(context).textTheme.titleSmall,
+                ),
+              ),
+            ),
+          ),
+          const SizedBox(height: 16),
+        ],
+      ),
     );
   }
 }
@@ -145,9 +214,13 @@ class _ScheduleArea extends StatelessWidget {
 }
 
 class _SidePanel extends StatelessWidget {
-  const _SidePanel({required this.controller});
+  const _SidePanel({
+    required this.controller,
+    this.onCollapse,
+  });
 
   final ScheduleController controller;
+  final VoidCallback? onCollapse;
 
   @override
   Widget build(BuildContext context) {
@@ -162,6 +235,24 @@ class _SidePanel extends StatelessWidget {
     return ListView(
       padding: EdgeInsets.all(isMobile ? 12 : 16),
       children: [
+        if (!isMobile) ...[
+          Row(
+            children: [
+              Expanded(
+                child: Text(
+                  'Selección de profesores',
+                  style: Theme.of(context).textTheme.titleMedium,
+                ),
+              ),
+              IconButton.filledTonal(
+                tooltip: 'Colapsar selección de profesores',
+                icon: const Icon(Icons.chevron_left),
+                onPressed: onCollapse,
+              ),
+            ],
+          ),
+          const SizedBox(height: 12),
+        ],
         const CourseOptionForm(),
         SizedBox(height: isMobile ? 12 : 16),
         FreeTimeSummary(options: controller.activeSchedule),
