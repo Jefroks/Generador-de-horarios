@@ -40,7 +40,10 @@ class ScheduleController extends ChangeNotifier {
     notifyListeners();
 
     options = await repository.getAll();
-    selectedCandidateIds = options.map((option) => option.id).toSet();
+
+    selectedCandidateIds = <String>{};
+    selectedCombinationIndex = 0;
+
     generateCombinations();
 
     isLoading = false;
@@ -52,7 +55,7 @@ class ScheduleController extends ChangeNotifier {
     notifyListeners();
 
     options = await repository.reloadFromPublishedSeed();
-    selectedCandidateIds = options.map((option) => option.id).toSet();
+    selectedCandidateIds = <String>{};
     selectedCombinationIndex = 0;
     generateCombinations();
 
@@ -86,7 +89,7 @@ class ScheduleController extends ChangeNotifier {
     );
 
     options = [...options, option];
-    selectedCandidateIds.add(option.id);
+    // selectedCandidateIds.add(option.id);
     await repository.saveAll(options);
     generateCombinations();
     notifyListeners();
