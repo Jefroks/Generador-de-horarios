@@ -142,7 +142,9 @@ class _CollapsedSidePanel extends StatelessWidget {
 
     return DecoratedBox(
       decoration: BoxDecoration(
-        color: colorScheme.surfaceVariant.withOpacity(0.35),
+        color: colorScheme.surfaceContainerHighest.withValues(
+          alpha: (0.35 * 0xFF),
+        ),
       ),
       child: Column(
         children: [
@@ -233,6 +235,7 @@ class _SidePanel extends StatelessWidget {
     final isMobile = AppBreakpoints.isMobile(width);
 
     return ListView(
+      key: const PageStorageKey<String>('professors-side-panel-list'),
       padding: EdgeInsets.all(isMobile ? 12 : 16),
       children: [
         if (!isMobile) ...[
@@ -272,8 +275,11 @@ class _SidePanel extends StatelessWidget {
         const SizedBox(height: 8),
         ...grouped.entries.map(
           (entry) => Card(
+            key: ValueKey('card-${entry.key}'),
             child: ExpansionTile(
+              key: PageStorageKey<String>('subject-expansion-${entry.key}'),
               initiallyExpanded: !isMobile,
+              maintainState: true,
               title: Text(entry.key),
               children: entry.value
                   .map(
