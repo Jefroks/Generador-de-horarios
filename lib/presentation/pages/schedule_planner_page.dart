@@ -260,7 +260,10 @@ class _SidePanel extends StatelessWidget {
         SizedBox(height: isMobile ? 12 : 16),
         FreeTimeSummary(options: controller.activeSchedule),
         SizedBox(height: isMobile ? 12 : 16),
-        const SizedBox(height: 8),
+        Text(
+          'Hay opciones de profesores precargadas en la base de datos.',
+          style: Theme.of(context).textTheme.bodySmall,
+        ),
         SizedBox(height: isMobile ? 12 : 16),
         Text('Profesores cargados', style: Theme.of(context).textTheme.titleMedium),
         const SizedBox(height: 8),

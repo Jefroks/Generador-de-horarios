@@ -74,7 +74,7 @@ class _CourseOptionFormState extends State<CourseOptionForm> {
                     controller: _sectionController,
                     textInputAction: TextInputAction.next,
                     decoration: const InputDecoration(
-                      labelText: 'Sección / grupo',
+                      labelText: 'Sección / grupo (opcional)',
                       hintText: 'Ej. OO4',
                       border: OutlineInputBorder(),
                     ),
@@ -116,7 +116,7 @@ class _CourseOptionFormState extends State<CourseOptionForm> {
                   ),
                   const SizedBox(height: 8),
                   Text(
-                    'Tip: si una materia tiene horarios distintos por día, guarda una opción por bloque o ajusta el JSON seed.',
+                    'Tip: Manten el mismo nombre de materia y profesor para que se agrupen en la lista.',
                     style: Theme.of(context).textTheme.bodySmall,
                   ),
                 ],
