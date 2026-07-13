@@ -768,6 +768,198 @@
     ]
   },
   {
+    "id": "rec-info-oo4-rodriguez-bernal",
+    "subject": "Recuperación de la Información",
+    "professor": "Fernando Rodríguez Bernal",
+    "section": "OO4",
+    "nrc": "24814",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "18:00",
+        "end": "19:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "17:00",
+        "end": "19:00"
+      },
+      {
+        "day": "thursday",
+        "start": "17:00",
+        "end": "19:00"
+      }
+    ]
+  },
+  {
+    "id": "rec-info-oo3-carrillo-ruiz",
+    "subject": "Recuperación de la Información",
+    "professor": "Maya Carrillo Ruiz",
+    "section": "OO3",
+    "nrc": "24848",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "14:00",
+        "end": "15:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "13:00",
+        "end": "15:00"
+      },
+      {
+        "day": "thursday",
+        "start": "13:00",
+        "end": "15:00"
+      }
+    ]
+  },
+  {
+    "id": "rec-info-oo1-vargas-lomeli",
+    "subject": "Recuperación de la Información",
+    "professor": "Miguel Ángel Vargas Lomelí",
+    "section": "OO1",
+    "nrc": "25679",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "16:00",
+        "end": "17:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "15:00",
+        "end": "17:00"
+      },
+      {
+        "day": "thursday",
+        "start": "15:00",
+        "end": "17:00"
+      }
+    ]
+  },
+  {
+    "id": "rec-info-oo2-vargas-lomeli",
+    "subject": "Recuperación de la Información",
+    "professor": "Miguel Ángel Vargas Lomelí",
+    "section": "OO2",
+    "nrc": "25694",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "15:00",
+        "end": "16:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "15:00",
+        "end": "17:00"
+      },
+      {
+        "day": "friday",
+        "start": "15:00",
+        "end": "17:00"
+      }
+    ]
+  },
+  {
+    "id": "moviles-oo2-contreras-monsalvo",
+    "subject": "Desarrollo de Aplicaciones Móviles",
+    "professor": "José Fernando Contreras Monsalvo",
+    "section": "OO2",
+    "nrc": "24959",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "13:00",
+        "end": "14:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "13:00",
+        "end": "15:00"
+      },
+      {
+        "day": "friday",
+        "start": "13:00",
+        "end": "15:00"
+      }
+    ]
+  },
+  {
+    "id": "moviles-oo3-lopez-poblano",
+    "subject": "Desarrollo de Aplicaciones Móviles",
+    "professor": "Gilberto López Poblano",
+    "section": "OO3",
+    "nrc": "24972",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "15:00",
+        "end": "16:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "15:00",
+        "end": "17:00"
+      },
+      {
+        "day": "friday",
+        "start": "15:00",
+        "end": "17:00"
+      }
+    ]
+  },
+  {
+    "id": "moviles-oo4-lopez-poblano",
+    "subject": "Desarrollo de Aplicaciones Móviles",
+    "professor": "Gilberto López Poblano",
+    "section": "OO4",
+    "nrc": "24992",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "16:00",
+        "end": "17:00"
+      },
+      {
+        "day": "tuesday",
+        "start": "15:00",
+        "end": "17:00"
+      },
+      {
+        "day": "thursday",
+        "start": "15:00",
+        "end": "17:00"
+      }
+    ]
+  },
+  {
+    "id": "moviles-oo5-sanchez-lopez",
+    "subject": "Desarrollo de Aplicaciones Móviles",
+    "professor": "Abraham Sánchez López",
+    "section": "OO5",
+    "nrc": "25024",
+    "sessions": [
+      {
+        "day": "monday",
+        "start": "09:00",
+        "end": "10:00"
+      },
+      {
+        "day": "wednesday",
+        "start": "09:00",
+        "end": "11:00"
+      },
+      {
+        "day": "friday",
+        "start": "09:00",
+        "end": "11:00"
+      }
+    ]
+  },
+  {
     "id": "laes250-oo1-diaz-perez",
     "subject": "Administración Estratégica",
     "professor": "Ricardo Díaz Pérez",
